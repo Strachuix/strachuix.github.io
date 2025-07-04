@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
 
         <div class="container">
-            <a href="#" class="navbar-brand">Medyczna strona</a>
+            <a href="index.html" class="navbar-brand">Medyczna strona</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,6 +47,10 @@
     <h2 class="form-title">Rejestracja</h2>
     <form id="registrationForm">
       <div class="row">
+        <div class="form-group mb-3">
+        <label for="emailReg">Email</label>
+        <input type="email" id="emailReg" name="email" class="form-control" required>
+      </div>
         <div class="col-md-6 mb-3">
           <label for="firstName">Imię</label>
           <input type="text" id="firstName" name="firstName" class="form-control" required>
@@ -55,10 +59,6 @@
           <label for="lastName">Nazwisko</label>
           <input type="text" id="lastName" name="lastName" class="form-control" required>
         </div>
-      </div>
-      <div class="form-group mb-3">
-        <label for="emailReg">Email</label>
-        <input type="email" id="emailReg" name="email" class="form-control" required>
       </div>
       <div class="form-group mb-3">
         <label for="passwordReg">Hasło</label>
