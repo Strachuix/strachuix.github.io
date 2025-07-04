@@ -7,7 +7,7 @@ function generateForm(formName) {
             output = `
                 <form id="loginForm">`
                 output += getEmailInput();
-                output += getPasswordInput("Password", 'password');
+                output += getPasswordInput("password", 'Password');
                 output += getSubmitButton('Login');
             output +=`</form>`;
         case 'registration':
@@ -16,8 +16,8 @@ function generateForm(formName) {
             output += getTextInput('firstName', 'First Name');
             output += getTextInput('lastName', 'Last Name');
             output += getEmailInput();
-            output += getPasswordInput("Password", 'password');
-            output += getPasswordInput("Confirm Password", 'confirmPassword');
+            output += getPasswordInput("password", 'Password');
+            output += getPasswordInput("confirmPassword", 'Confirm Password');
             output += getSubmitButton('Register');
             output +=`</form>`;
         case 'debug':
@@ -35,9 +35,18 @@ function getAllInputs() {
     return `
         ${getTextInput('name', 'Name')}
         ${getEmailInput()}
-        ${getPasswordInput("Password", 'password')}
-        ${getPasswordInput("Confirm Password", 'confirmPassword')}
+        ${getPasswordInput("password", 'Password')}
+        ${getPasswordInput("confirmPassword", 'Confirm Password')}
         ${getNumberInput('age', 'Age')}
+        ${getSelectInput('select', 'Select Option', [
+            { value: 'option1', label: 'Option 1' },
+            { value: 'option2', label: 'Option 2' },
+            { value: 'option3', label: 'Option 3' }])}
+        ${getDateInput('date', 'Date')}
+        ${getRadioInput('radio', 'Choose an option', [
+            { value: 'option1', label: 'Option 1' },
+            { value: 'option2', label: 'Option 2' },
+            { value: 'option3', label: 'Option 3' }])}
         ${getSubmitButton('Submit')}`;
 }
 
@@ -70,6 +79,38 @@ function getNumberInput(name, label) {
         <div class="form-group">
             <label for="${name}">${label}</label>
             <input type="number" id="${name}" name="${name}" class="form-control" required>
+        </div>`;
+}
+
+function getSelectInput(name, label, options) {
+    let optionsHtml = options.map(option => `<option value="${option.value}">${option.label}</option>`).join('');
+    return `
+        <div class="form-group">
+            <label for="${name}">${label}</label>
+            <select id="${name}" name="${name}" class="form-control" required>
+                ${optionsHtml}
+            </select>
+        </div>`;
+}
+
+function getDateInput(name, label) {
+    return `
+        <div class="form-group">
+            <label for="${name}">${label}</label>
+            <input type="date" id="${name}" name="${name}" class="form-control" required>
+        </div>`;
+}
+
+function getRadioInput(name, label, options) {
+    let optionsHtml = options.map(option => `
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="${name}" id="${option.value}" value="${option.value}" required>
+            <label class="form-check-label" for="${option.value}">${option.label}</label>
+        </div>`).join('');
+    return `
+        <div class="form-group">
+            <label>${label}</label>
+            ${optionsHtml}
         </div>`;
 }
 
