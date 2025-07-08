@@ -1,18 +1,29 @@
 //generating forms
 
-function generateForm(formName) {
+function generateForm(containerSelector, formName) {
+    var formData = renderForm(formName);
+    var formHtml = formData.output;
+    var formId = formData.formId;
+    $(containerSelector).html(formHtml);
+    attachFormListeners(formId);
+}
+
+function renderForm(formName) {
     output = '';
+    formId = '';
     switch (formName) {
         case 'login':
+            formId = 'loginForm';
             output = `
-                <form id="loginForm">`
+                <form id="${formId}">`
                 output += getEmailInput();
                 output += getPasswordInput("password", 'Password');
                 output += getSubmitButton('Login');
             output +=`</form>`;
         case 'registration':
+            formId = 'registrationForm';
             output = `
-                <form id="registrationForm">`
+                <form id="${formId}">`
             output += getTextInput('firstName', 'First Name');
             output += getTextInput('lastName', 'Last Name');
             output += getEmailInput();
@@ -21,14 +32,15 @@ function generateForm(formName) {
             output += getSubmitButton('Register');
             output +=`</form>`;
         case 'debug':
+            formId = 'debugForm';
             output = `
-                <form id="debugForm">`
+                <form id="${formId}">`
             output += getAllInputs();
             output +=`</form>`;
         default:
             output = '<p>Form not found.</p>';
     }
-    return output;
+    return {output, formId};
 }
 
 function getAllInputs() {
@@ -119,5 +131,43 @@ function getSubmitButton(value) {
         <div class="form-group">
             <button type="submit" class="btn btn-primary">${value}</button>
         </div>`;
+}
+
+// Call this function after rendering a form to the page
+function attachFormListeners(formId) {
+    const selector = '#' + formId;
+    $(selector).off('submit._custom').on('submit._custom', function (e) {
+        e.preventDefault();
+        var $form = $(this);
+        var data = $form.serialize();
+        var endpoint = '';
+
+        switch (formId) {// Determine the endpoint based on the form ID
+             case 'loginForm':
+                endpoint = '/api/login';
+                break;
+            case 'registrationForm':
+                endpoint = '/api/register'; 
+                break;
+            case 'debugForm':
+                endpoint = '/api/debug';
+                break;
+            default:
+                alert('Unknown form');
+                return;    
+        }
+
+        $.ajax({
+            url: endpoint,
+            type: 'POST',
+            data: data,
+            success: function (response) {
+                alert(response.message || 'Success!');
+            },
+            error: function (xhr) {
+                alert('Error: ' + (xhr.responseJSON?.message || xhr.statusText));
+            }
+        });
+    });
 }
 
