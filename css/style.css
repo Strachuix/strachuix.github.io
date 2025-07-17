@@ -92,7 +92,7 @@ input.form-control {
 
 .image-background {
   height: 400px;
-  background-image: url("/images/doc.jpg");
+  background-image: url("../images/doc.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -358,7 +358,7 @@ input.form-control {
 
 @media (max-width: 991px) {
   .consultation-section {
-    background-image: url("/images/doc.jpg");
+    background-image: url("../images/doc.jpg");
     background-size: cover;
     background-position: center;
   }
