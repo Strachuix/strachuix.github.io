@@ -8,9 +8,6 @@ $token = 'TWOJ_TOKEN_API'; // <-- tutaj wstaw swój token
 $year = isset($_GET['year']) ? intval($_GET['year']) : date('Y');
 $month = isset($_GET['month']) ? intval($_GET['month']) : date('n');
 
-// Inicjalizacja klasy Medfile
-$medfile = new Medfile($token);
-
 // Pobierz wydarzenia z Medfile
 $apiResponse = $medfile->getCalendarEvents($year, $month);
 
