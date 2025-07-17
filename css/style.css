@@ -7,21 +7,20 @@
 /* Nawigacja */
 
 .navbar {
-  background: linear-gradient(to right, #2d8cff, #6ac9ff);
+  /* background: linear-gradient(to right, #2d8cff, #6ac9ff); */
+  background-color: #0c223c;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #fff !important;
+.navbar img {
+  height: 50px;
 }
 
 .nav-link {
   color: #ffffffcc !important;
   font-weight: 500;
   margin-left: 1rem;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -29,12 +28,12 @@
 }
 
 .btn-login {
-  background-color: #fff;
-  color: #2d8cff;
+  background-color: #c2a76c;
+  color: #fff;
   font-weight: 600;
   border-radius: 30px;
   padding: 6px 20px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-login:hover {
@@ -93,7 +92,7 @@ input.form-control {
 
 .image-background {
   height: 400px;
-  background-image: url('/images/doc.jpg');
+  background-image: url("/images/doc.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -155,6 +154,7 @@ input.form-control {
 .card-button {
   display: inline-block;
   background: linear-gradient(to right, #2d8cff, #6ac9ff);
+  /* background-color: #c2a76c; */
   color: #fff;
   text-align: center;
   padding: 0.75rem 1.5rem;
@@ -165,9 +165,8 @@ input.form-control {
 }
 
 .card-button:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
-
 
 /* Jak się umówić */
 
@@ -239,10 +238,6 @@ input.form-control {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
 }
 
 .testimonial-text {
@@ -363,7 +358,7 @@ input.form-control {
 
 @media (max-width: 991px) {
   .consultation-section {
-    background-image: url('/images/doc.jpg');
+    background-image: url("/images/doc.jpg");
     background-size: cover;
     background-position: center;
   }
