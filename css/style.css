@@ -87,7 +87,9 @@ input.form-control {
 }
 
 .text-highlight {
-  color: #28a745;
+  background: -webkit-linear-gradient(#2d8cff, #5ca5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .image-background {
@@ -96,6 +98,14 @@ input.form-control {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+}
+.consultation-section a {
+  background: linear-gradient(to right, #2d8cff, #5ca5ff);
+  transition: all 0.3s ease;
+}
+
+.consultation-section a:hover {
+  transform: scale(1.05);
 }
 
 /* Kafelki */
@@ -153,12 +163,11 @@ input.form-control {
 /* Przycisk */
 .card-button {
   display: inline-block;
-  background: linear-gradient(to right, #2d8cff, #6ac9ff);
-  /* background-color: #c2a76c; */
+  background: linear-gradient(to right, #2d8cff, #5ca5ff);
   color: #fff;
   text-align: center;
   padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
+  border-radius: 99px;
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -180,12 +189,17 @@ input.form-control {
 }
 
 .text-highlight {
-  color: #28a745;
+  /* color: #1a6fd3; */
+  background: -webkit-linear-gradient(#2d8cff, #5ca5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .step .icon {
   font-size: 2rem;
-  color: #28a745;
+    background: -webkit-linear-gradient(#2d8cff, #5ca5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   flex-shrink: 0;
 }
 
@@ -206,7 +220,9 @@ input.form-control {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: #222;
+  background: -webkit-linear-gradient(#0073ff, #2d89f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .testimonials-grid {
@@ -262,6 +278,54 @@ input.form-control {
 .testimonial-stars {
   color: #fbbf24; /* złoty odcień dla gwiazdek */
   font-size: 1.2rem;
+}
+
+/* Kontakt */
+
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.contact-section h2 {
+  font-weight: 700;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 1.6rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover, .contact-info a:hover {
+    background: -webkit-linear-gradient(#0073ff, #2d89f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-success {
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.contact-info a, .social-icons a {
+    background: -webkit-linear-gradient(#2d8cff, #5ca5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Stopka */
@@ -344,15 +408,6 @@ input.form-control {
 }
 
 /* Media Query */
-
-/* Nawiagcja */
-
-@media (max-width: 991.98px) {
-  .btn-login {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
 
 /* Nagłówek strony */
 
