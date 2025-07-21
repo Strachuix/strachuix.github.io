@@ -1,58 +1,85 @@
 const services = [
   {
-    title: "E-Recepta",
-    price: "od 59 zł",
+    title: "E-recepta",
+    price: "59 zł",
     description: "Otrzymaj receptę w 15 minut, bez wychodzenia z domu.",
-    service: "erecepta",
-    order: 1,
+    translate: {
+      title: "EPrescription",
+      description: "EPrescriptionDescription",
+    },
   },
   {
     title: "Zwolnienie L4",
-    price: "od 99 zł",
+    price: "99 zł",
     description: "Szybkie zwolnienie po konsultacji z lekarzem online.",
-    service: "l4",
-    order: 2,
+    translate: {
+      title: "SickLeave",
+      description: "SickLeaveDescription",
+    },
   },
   {
     title: "Skierowanie",
-    price: "od 69 zł",
+    price: "69 zł",
     description: "Skierowanie na badania laboratoryjne lub obrazowe.",
-    service: "skierowanie",
-    order: 3,
+    translate: {
+      title: "Referral",
+      description: "ReferralDescription",
+    },
   },
   {
     title: "Teleporada",
-    price: "od 39 zł",
+    price: "39 zł",
     description: "Szybka rozmowa z lekarzem o Twoim stanie zdrowia.",
-    service: "teleporada",
-    order: 4,
+    translate: {
+      title: "Teleconsultation",
+      description: "TeleconsultationDescription",
+    },
   },
   {
     title: "Konsultacja internistyczna",
-    price: "od 29 zł",
+    price: "29 zł",
     description: "Porada od lekarza pierwszego kontaktu.",
-    service: "internista",
-    order: 5,
+    translate: {
+      title: "InternalConsultation",
+      description: "InternalConsultationDescription",
+    },
   },
   {
-    title: "Konsultacja psychiatryczna",
-    price: "od 279 zł",
-    description: "Pomoc specjalisty w sprawach zdrowia psychicznego.",
-    service: "psychiatra",
-    order: 6,
+    title: "Tabletki antykoncepcyjne",
+    price: "49 zł",
+    description: "E-recepta na tabletki antykoncepcyjne.",
+    translate: {
+      title: "ContraceptivePills",
+      description: "ContraceptivePillsDescription",
+    },
+  },
+  {
+    title: "Antykoncepcja 'dzień po'",
+    price: "45 zł",
+    description:
+      "Preparat wykorzystywany w celu zapobiegania niechcianej ciąży po odbytym stosunku. Skuteczność do 120h po stosunku.",
+    translate: {
+      title: "MorningAfterPill",
+      description:
+        "MorningAfterPillDescription",
+    },
   },
   {
     title: "Kontynuacja leczenia",
-    price: "od 159 zł",
+    price: "159 zł",
     description: "Przedłużenie recepty lub kontynuacja terapii.",
-    service: "kontynuacja",
-    order: 7,
+    translate: {
+      title: "TreatmentContinuation",
+      description: "TreatmentContinuationDescription",
+    },
   },
   {
     title: "Konsultacja pediatryczna",
-    price: "od 99 zł",
+    price: "99 zł",
     description: "Pomoc dla Twojego dziecka — bez stresu i kolejek.",
-    service: "pediatra",
-    order: 8,
+    translate: {
+      title: "PediatricConsultation",
+      description: "PediatricConsultationDescription",
+    },
   },
 ];

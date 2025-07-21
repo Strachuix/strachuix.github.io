@@ -59,7 +59,6 @@
 
   <body>
     <!-- Nawigacja -->
-
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a href="/" class="navbar-brand">
@@ -80,31 +79,59 @@
         >
           <ul class="navbar-nav align-items-lg-center">
             <li class="nav-item">
-              <a href="/" class="nav-link">Strona Główna</a>
+              <a href="/" class="nav-link" data-translate="MainPage"
+                >Strona Główna</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/o-nas" class="nav-link">O nas</a>
+              <a href="/o-nas" class="nav-link" data-translate="AboutUs">O nas</a>
             </li>
             <li class="nav-item">
-              <a href="/uslugi" class="nav-link">Usługi</a>
+              <a href="/uslugi" class="nav-link" data-translate="Services"
+                >Usługi</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/cennik" class="nav-link">Cennik</a>
+              <a href="/cennik" class="nav-link" data-translate="PriceList"
+                >Cennik</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/lekarze" class="nav-link">Lekarze</a>
+              <a href="/lekarze" class="nav-link" data-translate="Doctors"
+                >Lekarze</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/opinie" class="nav-link">Opinie</a>
+              <a href="/opinie" class="nav-link" data-translate="Opinions"
+                >Opinie</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/faq" class="nav-link">FAQ</a>
+              <a href="/faq" class="nav-link" data-translate="FAQ">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="/kontakt" class="nav-link">Kontakt</a>
+              <a href="/kontakt" class="nav-link" data-translate="Contact"
+                >Kontakt</a
+              >
             </li>
           </ul>
-          <a href="/rezerwacje" class="btn btn-login ms-lg-3">Umów wizytę</a>
+          <div class="language-switcher">
+            <button onclick="changeLanguage('pl')" data-translate="PL">
+              PL
+            </button>
+            <button onclick="changeLanguage('en')" data-translate="EN">
+              EN
+            </button>
+            <button onclick="changeLanguage('uk')" data-translate="UA">
+              UA
+            </button>
+          </div>
+          <a
+            href="/rezerwacje"
+            class="btn btn-login ms-lg-3"
+            data-translate="BookVisit"
+            >Umów wizytę</a
+          >
         </div>
       </div>
     </nav>
@@ -116,17 +143,21 @@
         <div class="row align-items-center">
           <!-- LEWA KOLUMNA: tekst -->
           <div class="col-lg-6 text-content">
-            <h2>
-              Konsultacje lekarskie online:<br /><span class="text-highlight"
+            <h2 data-translate="OnlineMedConsultations">
+              Konsultacje lekarskie online:<br /><span
+                class="text-highlight"
                 >Zadbamy o Twoje zdrowie</span
               >
             </h2>
-            <p>
+            <p data-translate="HeaderHookText">
               Potrzebujesz <strong>e-recepty</strong>, <strong>L4</strong> lub
               <strong>skierowania</strong>? Nasze szybkie konsultacje są
               dostępne już w <strong>15 minut</strong>.
             </p>
-            <a href="/rezerwacje" class="btn btn-primary mt-3"
+            <a
+              href="/rezerwacje"
+              class="btn btn-primary mt-3"
+              data-translate="BookNow"
               >Umów się teraz</a
             >
           </div>
@@ -153,45 +184,30 @@
           <!-- Prawa kolumna: treść -->
           <div class="col-lg-6">
             <div class="mb-3">
-              <h2 class="fw-bold text-center text-lg-start">O nas</h2>
-              <p class="text-muted">
+              <h2
+                class="fw-bold text-center text-lg-start"
+                data-translate="AboutUs"
+              >
+                O nas
+              </h2>
+              <p
+                class="text-muted"
+                data-translate="MeetOurTeam"
+              >
                 Poznaj nasz zespół i dowiedz się, dlaczego warto nam zaufać.
               </p>
             </div>
-            <p>
+            <p data-translate="WhoAreWe">
               <strong>Kim jesteśmy?</strong>
               <br />
               KrukMed24 to miejsce, w którym łączymy doświadczenie lekarzy z
-              wygodą nowoczesnych rozwiązań. Nie wierzymy w skomplikowane
-              procesy – stawiamy na proste i szybkie formy kontaktu. Teleporady,
-              e-recepty czy zwolnienia L4 – wszystko załatwisz bez wychodzenia z
-              domu, wtedy, gdy naprawdę tego potrzebujesz.
+              wygodą nowoczesnych rozwiązań.
             </p>
-            <p>
+            <p data-translate="WhyUs">
               <strong>Dlaczego My?</strong>
               <br />
-              Wiemy, jak cenny jest Twój czas i spokój. Dlatego nasz zespół
-              specjalistów czuwa 7 dni w tygodniu, oferując wsparcie o każdej
-              porze dnia i nocy. Nie mamy kolejek ani zbędnych formalności –
-              stawiamy na jasną komunikację i pełen profesjonalizm.
+              Wiemy, jak cenny jest Twój czas i spokój.
             </p>
-            <p>
-              <strong>Co nas wyróżnia?</strong>
-            </p>
-            <ul class="list-unstyled mt-3">
-              <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i> Szybkie
-                e-recepty i zwolnienia L4
-              </li>
-              <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>
-                Lekarze z doświadczeniem w wielu dziedzinach.
-              </li>
-              <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>
-                Pełna troska i indywidualne podejście do pacjenta.
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -202,109 +218,18 @@
     <section class="tiles-section" id="uslugi">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Nasze usługi</h2>
-          <p class="text-muted">
+          <h2 class="fw-bold" data-translate="ServicesHeader">Nasze usługi</h2>
+          <p
+            class="text-muted"
+            data-translate="ServicesHeader2"
+          >
             Sprawdź, jakie telemedyczne rozwiązania oferujemy – szybko i
             bezpiecznie.
           </p>
         </div>
 
-        <div class="tile-grid services">
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">E-recepta</h2>
-              <span class="card-price">od 59 zł</span>
-              <p class="card-desc">
-                Otrzymaj receptę w 15 minut, bez wychodzenia z domu.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Zwolnienie L4</h2>
-              <span class="card-price">od 99 zł</span>
-              <p class="card-desc">
-                Szybkie zwolnienie po konsultacji z lekarzem online.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Skierowanie</h2>
-              <span class="card-price">od 69 zł</span>
-              <p class="card-desc">
-                Skierowanie na badania laboratoryjne lub obrazowe.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Teleporada</h2>
-              <span class="card-price">od 39 zł</span>
-              <p class="card-desc">
-                Szybka rozmowa z lekarzem o Twoim stanie zdrowia.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Konsultacja internistyczna</h2>
-              <span class="card-price">od 29 zł</span>
-              <p class="card-desc">Porada od lekarza pierwszego kontaktu.</p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Tabletki antykoncepcyjne</h2>
-              <span class="card-price">od 49 zł</span>
-              <p class="card-desc">E-recepta na tabletki antykoncepcyjne.</p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Antykoncepcja "dzień po"</h2>
-              <span class="card-price">od 45 zł</span>
-              <p class="card-desc">
-                Preparat wykorzystywany w celu zapobiegania niechcianej ciąży po
-                odbytym stosunku. Skuteczność do 120h po stosunku.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Kontynuacja leczenia</h2>
-              <span class="card-price">od 159 zł</span>
-              <p class="card-desc">
-                Przedłużenie recepty lub kontynuacja terapii.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
-
-          <div class="card">
-            <div class="card-content">
-              <h2 class="card-title">Konsultacja pediatryczna</h2>
-              <span class="card-price">od 99 zł</span>
-              <p class="card-desc">
-                Pomoc dla Twojego dziecka — bez stresu i kolejek.
-              </p>
-            </div>
-            <a href="/rezerwacje" class="card-button">Wypełnij formularz</a>
-          </div>
+        <div class="tile-grid" id="services">
+          
         </div>
       </div>
     </section>
@@ -326,10 +251,10 @@
           <!-- Treść kroków -->
           <div class="col-md-6">
             <div class="mb-3">
-              <h2 class="fw-bold text-center text-lg-start">
+              <h2 class="fw-bold text-center text-lg-start" data-translate="HowToUse">
                 Jak korzystać z e-konsultacji?
               </h2>
-              <p class="text-muted">
+              <p class="text-muted" data-translate="HowToUseDescription">
                 Dowiedz się jak skorzystać z e-konsultacji w praktyce.
               </p>
             </div>
@@ -338,8 +263,8 @@
                 <i class="fas fa-file-alt"></i>
               </div>
               <div>
-                <h5>1. Wypełnij formularz</h5>
-                <p>Odpowiedz na pytania zawarte w formularzu konsultacji.</p>
+                <h5 data-translate="HowToUseStep1">1. Wypełnij formularz</h5>
+                <p data-translate="HowToUseStep1Description">Odpowiedz na pytania zawarte w formularzu konsultacji.</p>
               </div>
             </div>
             <div class="step mb-4 d-flex">
@@ -347,8 +272,8 @@
                 <i class="fas fa-credit-card"></i>
               </div>
               <div>
-                <h5>2. Zapłać</h5>
-                <p>
+                <h5 data-translate="HowToUseStep2">2. Zapłać</h5>
+                <p data-translate="HowToUseStep2Description">
                   Wybierz jedną z naszych bezpiecznych form płatności i opłać
                   zamówienie.
                 </p>
@@ -359,8 +284,8 @@
                 <i class="fas fa-phone-alt"></i>
               </div>
               <div>
-                <h5>3. Czekaj na telefon od lekarza</h5>
-                <p>
+                <h5 data-translate="HowToUseStep3">3. Czekaj na telefon od lekarza</h5>
+                <p data-translate="HowToUseStep3Description">
                   Krótko po otrzymaniu zamówienia skontaktuje się z Tobą nasz
                   lekarz.
                 </p>
@@ -376,15 +301,15 @@
     <section class="testimonials-section" id="opinie">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Opinie pacjentów</h2>
-          <p class="text-muted">
+          <h2 class="fw-bold" data-translate="TestimonialsHeader">Opinie pacjentów</h2>
+          <p class="text-muted" data-translate="TestimonialsDescription">
             Zobacz, co mówią o nas osoby, które skorzystały z naszych usług.
           </p>
         </div>
 
         <div class="testimonials-grid">
           <div class="testimonial-card">
-            <p class="testimonial-text">
+            <p class="testimonial-text" data-translate="Testimonial1">
               Szybko, sprawnie i bez wychodzenia z domu! E-recepta przyszła w
               kilka minut
             </p>
@@ -395,7 +320,7 @@
           </div>
 
           <div class="testimonial-card">
-            <p class="testimonial-text">
+            <p class="testimonial-text" data-translate="Testimonial2">
               Bardzo profesjonalne podejście lekarzy. Polecam każdemu, kto ceni
               sobie czas
             </p>
@@ -406,7 +331,7 @@
           </div>
 
           <div class="testimonial-card">
-            <p class="testimonial-text">
+            <p class="testimonial-text" data-translate="Testimonial3">
               Zwolnienie L4 otrzymałem tego samego dnia. Usługa naprawdę godna
               zaufania
             </p>
@@ -424,8 +349,8 @@
     <section class="py-5 bg-light" id="faq">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">FAQ (Najczęściej zadawane pytania)</h2>
-          <p class="text-muted">
+          <h2 class="fw-bold" data-translate="FAQHeader">FAQ (Najczęściej zadawane pytania)</h2>
+          <p class="text-muted" data-translate="FAQDescription">
             Znajdź odpowiedź na najczęściej pojawiające się pytania dotyczące
             naszych usług.
           </p>
@@ -442,6 +367,7 @@
                 data-bs-target="#faqCollapse1"
                 aria-expanded="true"
                 aria-controls="faqCollapse1"
+                data-translate="HowDoesOnlineConsultationWork"
               >
                 Jak wygląda konsultacja online?
               </button>
@@ -452,7 +378,7 @@
               aria-labelledby="faqHeading1"
               data-bs-parent="#faqAccordion"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" data-translate="OnlineConsultationProcess">
                 Konsultacja odbywa się w prosty sposób – po wypełnieniu
                 krótkiego formularza lekarz kontaktuje się z Tobą przez czat,
                 telefon lub wideorozmowę. Najczęściej trwa to kilka minut, a
@@ -471,6 +397,7 @@
                 data-bs-target="#faqCollapse2"
                 aria-expanded="false"
                 aria-controls="faqCollapse2"
+                data-translate="WillIGetPrescriptionAfterConsultation"
               >
                 Czy otrzymam receptę po rozmowie?
               </button>
@@ -481,7 +408,7 @@
               aria-labelledby="faqHeading2"
               data-bs-parent="#faqAccordion"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" data-translate="PrescriptionAfterConsultation">
                 Tak, jeśli lekarz uzna to za zasadne, wystawia e-receptę zaraz
                 po zakończeniu konsultacji. Kod recepty dostajesz w wiadomości
                 SMS oraz e-mail – możesz go zrealizować w każdej aptece.
@@ -499,6 +426,7 @@
                 data-bs-target="#faqCollapse3"
                 aria-expanded="false"
                 aria-controls="faqCollapse3"
+                data-translate="HowLongToWaitForDoctor"
               >
                 Jak długo czekam na lekarza?
               </button>
@@ -509,7 +437,7 @@
               aria-labelledby="faqHeading3"
               data-bs-parent="#faqAccordion"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" data-translate="WaitingTimeForDoctor">
                 W większości przypadków lekarz odpowiada w ciągu 10–15 minut. W
                 godzinach nocnych czas może być nieco dłuższy, ale zwykle nie
                 przekracza 30 minut.
@@ -527,6 +455,7 @@
                 data-bs-target="#faqCollapse4"
                 aria-expanded="false"
                 aria-controls="faqCollapse4"
+                data-translate="CanIGetSickLeaveOnline"
               >
                 Czy mogę otrzymać L4 przez internet?
               </button>
@@ -537,7 +466,7 @@
               aria-labelledby="faqHeading4"
               data-bs-parent="#faqAccordion"
             >
-              <div class="accordion-body">
+              <div class="accordion-body" data-translate="SickLeaveOnline">
                 Tak, jeśli lekarz stwierdzi potrzebę wystawienia zwolnienia,
                 e-ZLA trafia automatycznie do ZUS i Twojego pracodawcy. Nie
                 musisz niczego drukować ani dostarczać osobiście.
@@ -553,24 +482,24 @@
     <section class="contact-section py-5 bg-light" id="kontakt">
       <div class="container text-center">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Kontakt</h2>
-          <p class="text-muted">
+          <h2 class="fw-bold" data-translate="Contact">Kontakt</h2>
+          <p class="text-muted" data-translate="ContactDescription">
             Masz pytania? Skontaktuj się z nami – jesteśmy dostępni 24/7.
           </p>
         </div>
 
-        <p class="mb-4">
+        <p class="mb-4" data-translate="ContactUs">
           Masz pytania dotyczące konsultacji online? Jesteśmy do Twojej
           dyspozycji 7 dni w tygodniu.
         </p>
 
         <div class="contact-info mb-4">
           <p>
-            <i class="fas fa-phone-alt me-2"></i><strong>Telefon:</strong>
+            <i class="fas fa-phone-alt me-2"></i><strong data-translate="Phone">Telefon:</strong>
             <a href="tel:+48123456789">+48 123 456 789</a>
           </p>
           <p>
-            <i class="fas fa-envelope me-2"></i><strong>E-mail:</strong>
+            <i class="fas fa-envelope me-2"></i><strong data-translate="Email">E-mail:</strong>
             <a href="mailto:kontakt@123.pl">kontakt@123.pl</a>
           </p>
         </div>
@@ -588,6 +517,7 @@
         <a
           href="tel:+48123456789"
           class="btn btn-primary d-inline-block d-md-none"
+          data-translate="CallNow"
           >Zadzwoń teraz</a
         >
       </div>
@@ -598,8 +528,11 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">
-          <h3 class="footer-logo">KrukMed24</h3>
-          <p class="footer-description">
+          <h3 class="footer-logo" data-translate="KrukMed24">KrukMed24</h3>
+          <p
+            class="footer-description"
+            data-translate="FooterDescription"
+          >
             Nowoczesna opieka medyczna online – bez kolejek i stresu.
           </p>
         </div>
@@ -607,17 +540,17 @@
         <div class="footer-column">
           <h4>Oferta</h4>
           <ul class="footer-links">
-            <li><a href="/">E-recepta</a></li>
-            <li><a href="/">Zwolnienie L4</a></li>
-            <li><a href="/">Skierowanie</a></li>
-            <li><a href="/">Konsultacja online</a></li>
+            <li><a href="/" data-translate="EPrescription">E-recepta</a></li>
+            <li><a href="/" data-translate="SickLeave">Zwolnienie L4</a></li>
+            <li><a href="/" data-translate="Referral">Skierowanie</a></li>
+            <li><a href="/" data-translate="Teleconsultation">Konsultacja online</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
-          <h4>Kontakt</h4>
-          <p>Email: kontakt@123.pl</p>
-          <p>Telefon: +48 123 456 789</p>
+          <h4 data-translate="Contact">Kontakt</h4>
+          <p><span data-translate="Email">Email:</span> kontakt@123.pl</p>
+          <p><span data-translate="Phone">Telefon:</span> +48 123 456 789</p>
           <div class="socials">
             <a href="/"><i class="fab fa-facebook-f"></i></a>
             <a href="/"><i class="fab fa-instagram"></i></a>
@@ -631,25 +564,51 @@
     </footer>
     <!-- Tablica z danymi usług -->
     <script src="../js/servicesArray.js"></script>
+    <script src="../js/translations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // Generowanie kafelków dynamicznie
-      $(document).ready(function () {
+      // Funkcja do generowania kafelków z tłumaczeniami
+      function generateTiles(lang) {
         const tileGrid = $("#services");
+        tileGrid.empty(); // Wyczyść istniejące kafelki
+
         services.forEach((service) => {
           const cardHtml = `
             <div class="card">
               <div class="card-content">
-                <h2 class="card-title">${service.title}</h2>
-                <span class="card-price">${service.price}</span>
-                <p class="card-desc">${service.description}</p>
+                <h2 class="card-title" data-translate="${service.translate.title}">
+                  ${translations[lang][service.translate.title] || service.title}
+                </h2>
+                <span class="card-price">
+                  <span data-translate="PricePrefix">od</span> ${service.price}
+                </span>
+                <p class="card-desc" data-translate="${service.translate.description}">
+                  ${translations[lang][service.translate.description] || service.description}
+                </p>
               </div>
-              <a href="bookvisit.html?service=${service.service}" class="card-button">Wypełnij formularz</a>
+              <a href="/rezerwacje" class="card-button" data-translate="Wypełnij formularz">
+                ${translations[lang]["Wypełnij formularz"] || "Wypełnij formularz"}
+              </a>
             </div>
           `;
           tileGrid.append(cardHtml);
         });
+      }
+
+      // Wywołaj generowanie kafelków po załadowaniu strony
+      $(document).ready(function () {
+        generateTiles("pl"); // Domyślny język
       });
+
+      // Obsługa zmiany języka
+      function changeLanguage(lang) {
+        generateTiles(lang); // Przeładuj kafelki z nowym językiem
+        translate(lang); // Przeładuj tłumaczenia
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
         const path = window.location.pathname.replace(/\/$/, ""); // usuń końcowy /
         if (path === "/o-nas") {
