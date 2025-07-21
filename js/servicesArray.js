@@ -1,0 +1,58 @@
+const services = [
+  {
+    title: "E-Recepta",
+    price: "od 59 zł",
+    description: "Otrzymaj receptę w 15 minut, bez wychodzenia z domu.",
+    service: "erecepta",
+    order: 1,
+  },
+  {
+    title: "Zwolnienie L4",
+    price: "od 99 zł",
+    description: "Szybkie zwolnienie po konsultacji z lekarzem online.",
+    service: "l4",
+    order: 2,
+  },
+  {
+    title: "Skierowanie",
+    price: "od 69 zł",
+    description: "Skierowanie na badania laboratoryjne lub obrazowe.",
+    service: "skierowanie",
+    order: 3,
+  },
+  {
+    title: "Teleporada",
+    price: "od 39 zł",
+    description: "Szybka rozmowa z lekarzem o Twoim stanie zdrowia.",
+    service: "teleporada",
+    order: 4,
+  },
+  {
+    title: "Konsultacja internistyczna",
+    price: "od 29 zł",
+    description: "Porada od lekarza pierwszego kontaktu.",
+    service: "internista",
+    order: 5,
+  },
+  {
+    title: "Konsultacja psychiatryczna",
+    price: "od 279 zł",
+    description: "Pomoc specjalisty w sprawach zdrowia psychicznego.",
+    service: "psychiatra",
+    order: 6,
+  },
+  {
+    title: "Kontynuacja leczenia",
+    price: "od 159 zł",
+    description: "Przedłużenie recepty lub kontynuacja terapii.",
+    service: "kontynuacja",
+    order: 7,
+  },
+  {
+    title: "Konsultacja pediatryczna",
+    price: "od 99 zł",
+    description: "Pomoc dla Twojego dziecka — bez stresu i kolejek.",
+    service: "pediatra",
+    order: 8,
+  },
+];

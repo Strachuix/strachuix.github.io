@@ -53,7 +53,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
@@ -317,7 +317,7 @@
           <!-- Obrazek -->
           <div class="col-md-6 mb-4 mb-md-0">
             <img
-              src="/images/doc1.jpg"
+              src="../images/doc1.jpg"
               alt="Konsultacja online"
               class="img-fluid rounded shadow"
             />
@@ -627,6 +627,27 @@
         <p>&copy; 2025 KrukMed24. Wszelkie prawa zastrzeżone.</p>
       </div>
     </footer>
+    <!-- Tablica z danymi usług -->
+    <script src="../js/servicesArray.js"></script> 
+    <script>
+      // Generowanie kafelków dynamicznie
+      $(document).ready(function () {
+        const tileGrid = $("#services");
+        services.forEach((service) => {
+          const cardHtml = `
+            <div class="card">
+              <div class="card-content">
+                <h2 class="card-title">${service.title}</h2>
+                <span class="card-price">${service.price}</span>
+                <p class="card-desc">${service.description}</p>
+              </div>
+              <a href="bookvisit.html?service=${service.service}" class="card-button">Wypełnij formularz</a>
+            </div>
+          `;
+          tileGrid.append(cardHtml);
+        });
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
