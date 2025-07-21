@@ -326,7 +326,9 @@
           <!-- Treść kroków -->
           <div class="col-md-6">
             <div class="mb-3">
-              <h2 class="fw-bold text-center text-lg-start">Jak korzystać z e-konsultacji?</h2>
+              <h2 class="fw-bold text-center text-lg-start">
+                Jak korzystać z e-konsultacji?
+              </h2>
               <p class="text-muted">
                 Dowiedz się jak skorzystać z e-konsultacji w praktyce.
               </p>
@@ -628,7 +630,8 @@
       </div>
     </footer>
     <!-- Tablica z danymi usług -->
-    <script src="../js/servicesArray.js"></script> 
+    <script src="../js/servicesArray.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // Generowanie kafelków dynamicznie
       $(document).ready(function () {
@@ -647,10 +650,6 @@
           tileGrid.append(cardHtml);
         });
       });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
       document.addEventListener("DOMContentLoaded", function () {
         const path = window.location.pathname.replace(/\/$/, ""); // usuń końcowy /
         if (path === "/o-nas") {
