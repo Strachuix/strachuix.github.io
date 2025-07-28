@@ -81,7 +81,7 @@ input.form-control {
 
 /* Nagłówek strony */
 
-.consultation-section {
+.consultation-section, .carrer-section {
   padding: 60px 0;
   background-color: #fff;
 }
@@ -99,12 +99,21 @@ input.form-control {
   background-position: center;
   border-radius: 10px;
 }
-.consultation-section a {
+
+#carrer-bg {
+  height: 400px;
+  background-image: url("../images/doc-team.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.consultation-section a, .carrer-section a {
   background: linear-gradient(to right, #2d8cff, #5ca5ff);
   transition: all 0.3s ease;
 }
 
-.consultation-section a:hover {
+.consultation-section a:hover, .carrer-section a:hover {
   transform: scale(1.05);
 }
 

@@ -84,7 +84,9 @@
               >
             </li>
             <li class="nav-item">
-              <a href="/o-nas" class="nav-link" data-translate="AboutUs">O nas</a>
+              <a href="/o-nas" class="nav-link" data-translate="AboutUs"
+                >O nas</a
+              >
             </li>
             <li class="nav-item">
               <a href="/uslugi" class="nav-link" data-translate="Services"
@@ -92,12 +94,12 @@
               >
             </li>
             <li class="nav-item">
-              <a href="/cennik" class="nav-link" data-translate="PriceList"
+              <a href="/cennik" class="nav-link" data-translate="cennik"
                 >Cennik</a
               >
             </li>
             <li class="nav-item">
-              <a href="/lekarze" class="nav-link" data-translate="Doctors"
+              <a href="/lekarze" class="nav-link" data-translate="lekarze"
                 >Lekarze</a
               >
             </li>
@@ -110,28 +112,51 @@
               <a href="/faq" class="nav-link" data-translate="FAQ">FAQ</a>
             </li>
             <li class="nav-item">
+              <a href="/kariera" class="nav-link" data-translate="kariera">Kariera</a>
+            </li>
+            <li class="nav-item">
               <a href="/kontakt" class="nav-link" data-translate="Contact"
                 >Kontakt</a
               >
             </li>
           </ul>
-          <div class="language-switcher">
-            <button onclick="changeLanguage('pl')" data-translate="PL">
-              PL
-            </button>
-            <button onclick="changeLanguage('en')" data-translate="EN">
-              EN
-            </button>
-            <button onclick="changeLanguage('uk')" data-translate="UA">
-              UA
-            </button>
-          </div>
           <a
             href="/rezerwacje"
             class="btn btn-login ms-lg-3"
             data-translate="BookVisit"
             >Umów wizytę</a
           >
+          <div class="dropdown language-switcher ml-5">
+            <button
+              class="btn btn-outline-light dropdown-toggle"
+              type="button"
+              id="languageDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              🇵🇱
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="languageDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('pl')"
+                  >🇵🇱</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('en')"
+                  >🇺🇸</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="changeLanguage('uk')"
+                  >🇺🇦</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -144,8 +169,7 @@
           <!-- LEWA KOLUMNA: tekst -->
           <div class="col-lg-6 text-content">
             <h2 data-translate="OnlineMedConsultations">
-              Konsultacje lekarskie online:<br /><span
-                class="text-highlight"
+              Konsultacje lekarskie online:<br /><span class="text-highlight"
                 >Zadbamy o Twoje zdrowie</span
               >
             </h2>
@@ -190,10 +214,7 @@
               >
                 O nas
               </h2>
-              <p
-                class="text-muted"
-                data-translate="MeetOurTeam"
-              >
+              <p class="text-muted" data-translate="MeetOurTeam">
                 Poznaj nasz zespół i dowiedz się, dlaczego warto nam zaufać.
               </p>
             </div>
@@ -219,20 +240,102 @@
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold" data-translate="ServicesHeader">Nasze usługi</h2>
-          <p
-            class="text-muted"
-            data-translate="ServicesHeader2"
-          >
+          <p class="text-muted" data-translate="ServicesHeader2">
             Sprawdź, jakie telemedyczne rozwiązania oferujemy – szybko i
             bezpiecznie.
           </p>
         </div>
 
-        <div class="tile-grid" id="services">
-          
-        </div>
+        <div class="tile-grid" id="services"></div>
       </div>
     </section>
+
+    <section class="py-4 bg-light">
+  <div class="container text-center">
+    <p class="mb-3 fw-semibold">Wygodne formy płatności:</p>
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+      <img src="https://cdn.brandfetch.io/idtcy388S0/w/820/h/388/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B" alt="BLIK" height="28" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1280px-Visa.svg.png" alt="Visa" height="28" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" height="28" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Maestro_Logo.svg" alt="Maestro" height="28" />
+    </div>
+  </div>
+</section>
+
+<!-- Sekcja ze stałą usługą -->
+
+<!-- Stała Opieka Telemedyczna -->
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" >Stała Opieka Telemedyczna</h2>
+      <p class="text-muted" data-translate="TestimonialsDescription">
+        Twój lekarz na stałe – bez wychodzenia z domu.
+      </p>
+    </div>
+
+    <div class="row text-center">
+      <!-- Box 1 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h5>Regularny kontakt z lekarzem</h5>
+          <p class="text-muted small">
+            Comiesięczna rozmowa o Twoim zdrowiu i przebiegu leczenia.
+          </p>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fas fa-prescription-bottle-alt"></i>
+          </div>
+          <h5>Recepty na bieżąco</h5>
+          <p class="text-muted small">
+            Recepty wystawiane podczas rozmowy – jeśli są wskazania i brak przeciwwskazań.
+          </p>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h5>Indywidualna opieka</h5>
+          <p class="text-muted small">
+            Lekarz zna Twoją historię choroby i prowadzi dokumentację.
+          </p>
+        </div>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <div class="mb-3 text-primary fs-2">
+            <i class="fas fa-house-user"></i>
+          </div>
+          <h5>Bez wychodzenia z domu</h5>
+          <p class="text-muted small">
+            Rozmowy telefoniczne lub wideo – wygodnie i bezpiecznie.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="fs-5"><strong>Cena:</strong> <span class="text-muted">XXX zł / miesiąc</span></p>
+      <a href="#rezerwacja" class="btn btn-primary btn-lg">Zamów opiekę</a>
+    </div>
+  </div>
+</section>
+
 
     <!-- Jak się umówić -->
 
@@ -251,7 +354,10 @@
           <!-- Treść kroków -->
           <div class="col-md-6">
             <div class="mb-3">
-              <h2 class="fw-bold text-center text-lg-start" data-translate="HowToUse">
+              <h2
+                class="fw-bold text-center text-lg-start"
+                data-translate="HowToUse"
+              >
                 Jak korzystać z e-konsultacji?
               </h2>
               <p class="text-muted" data-translate="HowToUseDescription">
@@ -264,7 +370,9 @@
               </div>
               <div>
                 <h5 data-translate="HowToUseStep1">1. Wypełnij formularz</h5>
-                <p data-translate="HowToUseStep1Description">Odpowiedz na pytania zawarte w formularzu konsultacji.</p>
+                <p data-translate="HowToUseStep1Description">
+                  Odpowiedz na pytania zawarte w formularzu konsultacji.
+                </p>
               </div>
             </div>
             <div class="step mb-4 d-flex">
@@ -284,7 +392,9 @@
                 <i class="fas fa-phone-alt"></i>
               </div>
               <div>
-                <h5 data-translate="HowToUseStep3">3. Czekaj na telefon od lekarza</h5>
+                <h5 data-translate="HowToUseStep3">
+                  3. Czekaj na telefon od lekarza
+                </h5>
                 <p data-translate="HowToUseStep3Description">
                   Krótko po otrzymaniu zamówienia skontaktuje się z Tobą nasz
                   lekarz.
@@ -301,7 +411,9 @@
     <section class="testimonials-section" id="opinie">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="TestimonialsHeader">Opinie pacjentów</h2>
+          <h2 class="fw-bold" data-translate="TestimonialsHeader">
+            Opinie pacjentów
+          </h2>
           <p class="text-muted" data-translate="TestimonialsDescription">
             Zobacz, co mówią o nas osoby, które skorzystały z naszych usług.
           </p>
@@ -349,7 +461,9 @@
     <section class="py-5 bg-light" id="faq">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="FAQHeader">FAQ (Najczęściej zadawane pytania)</h2>
+          <h2 class="fw-bold" data-translate="FAQHeader">
+            FAQ (Najczęściej zadawane pytania)
+          </h2>
           <p class="text-muted" data-translate="FAQDescription">
             Znajdź odpowiedź na najczęściej pojawiające się pytania dotyczące
             naszych usług.
@@ -378,7 +492,10 @@
               aria-labelledby="faqHeading1"
               data-bs-parent="#faqAccordion"
             >
-              <div class="accordion-body" data-translate="OnlineConsultationProcess">
+              <div
+                class="accordion-body"
+                data-translate="OnlineConsultationProcess"
+              >
                 Konsultacja odbywa się w prosty sposób – po wypełnieniu
                 krótkiego formularza lekarz kontaktuje się z Tobą przez czat,
                 telefon lub wideorozmowę. Najczęściej trwa to kilka minut, a
@@ -408,7 +525,10 @@
               aria-labelledby="faqHeading2"
               data-bs-parent="#faqAccordion"
             >
-              <div class="accordion-body" data-translate="PrescriptionAfterConsultation">
+              <div
+                class="accordion-body"
+                data-translate="PrescriptionAfterConsultation"
+              >
                 Tak, jeśli lekarz uzna to za zasadne, wystawia e-receptę zaraz
                 po zakończeniu konsultacji. Kod recepty dostajesz w wiadomości
                 SMS oraz e-mail – możesz go zrealizować w każdej aptece.
@@ -495,11 +615,13 @@
 
         <div class="contact-info mb-4">
           <p>
-            <i class="fas fa-phone-alt me-2"></i><strong data-translate="Phone">Telefon:</strong>
+            <i class="fas fa-phone-alt me-2"></i
+            ><strong data-translate="Phone">Telefon:</strong>
             <a href="tel:+48123456789">+48 123 456 789</a>
           </p>
           <p>
-            <i class="fas fa-envelope me-2"></i><strong data-translate="Email">E-mail:</strong>
+            <i class="fas fa-envelope me-2"></i
+            ><strong data-translate="Email">E-mail:</strong>
             <a href="mailto:kontakt@123.pl">kontakt@123.pl</a>
           </p>
         </div>
@@ -529,10 +651,7 @@
       <div class="footer-container">
         <div class="footer-column">
           <h3 class="footer-logo" data-translate="KrukMed24">KrukMed24</h3>
-          <p
-            class="footer-description"
-            data-translate="FooterDescription"
-          >
+          <p class="footer-description" data-translate="FooterDescription">
             Nowoczesna opieka medyczna online – bez kolejek i stresu.
           </p>
         </div>
@@ -543,7 +662,11 @@
             <li><a href="/" data-translate="EPrescription">E-recepta</a></li>
             <li><a href="/" data-translate="SickLeave">Zwolnienie L4</a></li>
             <li><a href="/" data-translate="Referral">Skierowanie</a></li>
-            <li><a href="/" data-translate="Teleconsultation">Konsultacja online</a></li>
+            <li>
+              <a href="/" data-translate="Teleconsultation"
+                >Konsultacja online</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -576,18 +699,30 @@
           const cardHtml = `
             <div class="card">
               <div class="card-content">
-                <h2 class="card-title" data-translate="${service.translate.title}">
-                  ${translations[lang][service.translate.title] || service.title}
+                <h2 class="card-title" data-translate="${
+                  service.translate.title
+                }">
+                  ${
+                    translations[lang][service.translate.title] || service.title
+                  }
                 </h2>
                 <span class="card-price">
                   <span data-translate="PricePrefix">od</span> ${service.price}
                 </span>
-                <p class="card-desc" data-translate="${service.translate.description}">
-                  ${translations[lang][service.translate.description] || service.description}
+                <p class="card-desc" data-translate="${
+                  service.translate.description
+                }">
+                  ${
+                    translations[lang][service.translate.description] ||
+                    service.description
+                  }
                 </p>
               </div>
               <a href="/rezerwacje" class="card-button" data-translate="Wypełnij formularz">
-                ${translations[lang]["Wypełnij formularz"] || "Wypełnij formularz"}
+                ${
+                  translations[lang]["Wypełnij formularz"] ||
+                  "Wypełnij formularz"
+                }
               </a>
             </div>
           `;
@@ -619,6 +754,11 @@
         if (path === "/uslugi") {
           document
             .getElementById("uslugi")
+            ?.scrollIntoView({ behavior: "smooth" });
+        }
+        if (path === "/opinie") {
+          document
+            .getElementById("opinie")
             ?.scrollIntoView({ behavior: "smooth" });
         }
         if (path === "/faq") {

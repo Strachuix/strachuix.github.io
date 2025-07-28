@@ -8,6 +8,15 @@ const services = [
       description: "EPrescriptionDescription",
     },
   },
+    {
+    title: "E-zaświadczenie",
+    price: "99 zł",
+    description: "Zaświadczenie o stanie zdrowia dla pracodawcy, szkoły lub uczelni, w pliku PDF.",
+    translate: {
+      title: "ECertificate",
+      description: "ECertificateDescription",
+    },
+  },
   {
     title: "Zwolnienie L4",
     price: "99 zł",
@@ -18,12 +27,12 @@ const services = [
     },
   },
   {
-    title: "Skierowanie",
+    title: "E-Skierowanie",
     price: "69 zł",
-    description: "Skierowanie na badania laboratoryjne lub obrazowe.",
+    description: "Skierowanie na płatne badania diagnostyczne lub obrazowe. Na CITO.",
     translate: {
-      title: "Referral",
-      description: "ReferralDescription",
+      title: "EReferral",
+      description: "EReferralDescription",
     },
   },
   {

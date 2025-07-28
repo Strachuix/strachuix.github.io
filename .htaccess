@@ -6,5 +6,8 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-RewriteRule ^(uslugi|o-nas|faq|kontakt)/?$ index.html [L]
+RewriteRule ^(o-nas|uslugi|opinie|faq|kontakt)/?$ index.html [L]
 RewriteRule ^rezerwacje/?$ bookvisit.html [L]
+RewriteRule ^cennik/?$ pricing.html [L]
+RewriteRule ^lekarze/?$ doctors.html [L]
+RewriteRule ^kariera/?$ carrer.html [L]
