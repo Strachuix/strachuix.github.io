@@ -55,6 +55,8 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -94,12 +96,12 @@
               >
             </li>
             <li class="nav-item">
-              <a href="/cennik" class="nav-link" data-translate="cennik"
+              <a href="/cennik" class="nav-link" data-translate="PriceList"
                 >Cennik</a
               >
             </li>
             <li class="nav-item">
-              <a href="/lekarze" class="nav-link" data-translate="lekarze"
+              <a href="/lekarze" class="nav-link" data-translate="Doctors"
                 >Lekarze</a
               >
             </li>
@@ -112,7 +114,9 @@
               <a href="/faq" class="nav-link" data-translate="FAQ">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="/kariera" class="nav-link" data-translate="kariera">Kariera</a>
+              <a href="/kariera" class="nav-link" data-translate="Career"
+                >Kariera</a
+              >
             </li>
             <li class="nav-item">
               <a href="/kontakt" class="nav-link" data-translate="Contact"
@@ -124,38 +128,31 @@
             href="/rezerwacje"
             class="btn btn-login ms-lg-3"
             data-translate="BookVisit"
-            >Umów wizytę</a
           >
-          <div class="dropdown language-switcher ml-5">
+            Umów wizytę
+          </a>
+          <div class="language-switcher d-flex gap-2 ms-3">
             <button
-              class="btn btn-outline-light dropdown-toggle"
-              type="button"
-              id="languageDropdown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+              class="btn btn-light"
+              onclick="changeLanguage('pl')"
+              aria-label="Polski"
             >
-              🇵🇱
+              PL
             </button>
-            <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="languageDropdown"
+            <button
+              class="btn btn-light"
+              onclick="changeLanguage('en')"
+              aria-label="English"
             >
-              <li>
-                <a class="dropdown-item" href="#" onclick="changeLanguage('pl')"
-                  >🇵🇱</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#" onclick="changeLanguage('en')"
-                  >🇺🇸</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#" onclick="changeLanguage('uk')"
-                  >🇺🇦</a
-                >
-              </li>
-            </ul>
+              EN
+            </button>
+            <button
+              class="btn btn-light"
+              onclick="changeLanguage('uk')"
+              aria-label="Українська"
+            >
+              UA
+            </button>
           </div>
         </div>
       </div>
@@ -251,91 +248,136 @@
     </section>
 
     <section class="py-4 bg-light">
-  <div class="container text-center">
-    <p class="mb-3 fw-semibold">Wygodne formy płatności:</p>
-    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
-      <img src="https://cdn.brandfetch.io/idtcy388S0/w/820/h/388/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B" alt="BLIK" height="28" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1280px-Visa.svg.png" alt="Visa" height="28" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" height="28" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Maestro_Logo.svg" alt="Maestro" height="28" />
-    </div>
-  </div>
-</section>
-
-<!-- Sekcja ze stałą usługą -->
-
-<!-- Stała Opieka Telemedyczna -->
-
-<section class="py-5 bg-light">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold" >Stała Opieka Telemedyczna</h2>
-      <p class="text-muted" data-translate="TestimonialsDescription">
-        Twój lekarz na stałe – bez wychodzenia z domu.
-      </p>
-    </div>
-
-    <div class="row text-center">
-      <!-- Box 1 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 bg-white shadow rounded h-100">
-          <div class="mb-3 text-primary fs-2">
-            <i class="fas fa-calendar-check"></i>
-          </div>
-          <h5>Regularny kontakt z lekarzem</h5>
-          <p class="text-muted small">
-            Comiesięczna rozmowa o Twoim zdrowiu i przebiegu leczenia.
-          </p>
+      <div class="container text-center">
+        <p class="mb-3 fw-semibold" data-translate="PaymentMethods">
+          Wygodne formy płatności:
+        </p>
+        <div
+          class="d-flex justify-content-center align-items-center flex-wrap gap-3"
+        >
+          <img
+            src="https://cdn.brandfetch.io/idtcy388S0/w/820/h/388/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+            alt="BLIK"
+            height="28"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1280px-Visa.svg.png"
+            alt="Visa"
+            height="28"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+            alt="MasterCard"
+            height="28"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Maestro_Logo.svg"
+            alt="Maestro"
+            height="28"
+          />
         </div>
       </div>
+    </section>
 
-      <!-- Box 2 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 bg-white shadow rounded h-100">
-          <div class="mb-3 text-primary fs-2">
-            <i class="fas fa-prescription-bottle-alt"></i>
-          </div>
-          <h5>Recepty na bieżąco</h5>
-          <p class="text-muted small">
-            Recepty wystawiane podczas rozmowy – jeśli są wskazania i brak przeciwwskazań.
+    <!-- Sekcja ze stałą usługą -->
+
+    <!-- Stała Opieka Telemedyczna -->
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" data-translate="ConstantTelemedicineCare">
+            Stała Opieka Telemedyczna
+          </h2>
+          <p class="text-muted" data-translate="TestimonialsDescription">
+            Twój lekarz na stałe – bez wychodzenia z domu.
           </p>
         </div>
-      </div>
 
-      <!-- Box 3 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 bg-white shadow rounded h-100">
-          <div class="mb-3 text-primary fs-2">
-            <i class="fas fa-user-md"></i>
+        <div class="row text-center">
+          <!-- Box 1 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-4 bg-white shadow rounded h-100">
+              <div class="mb-3 text-primary fs-2">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h5 data-translate="RegularContact">
+                Regularny kontakt z lekarzem
+              </h5>
+              <p
+                class="text-muted small"
+                data-translate="RegularContactDescription"
+              >
+                Comiesięczna rozmowa o Twoim zdrowiu i przebiegu leczenia.
+              </p>
+            </div>
           </div>
-          <h5>Indywidualna opieka</h5>
-          <p class="text-muted small">
-            Lekarz zna Twoją historię choroby i prowadzi dokumentację.
+
+          <!-- Box 2 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-4 bg-white shadow rounded h-100">
+              <div class="mb-3 text-primary fs-2">
+                <i class="fas fa-prescription-bottle-alt"></i>
+              </div>
+              <h5 data-translate="RegularPrescriptions">Recepty na bieżąco</h5>
+              <p
+                class="text-muted small"
+                data-translate="RegularPrescriptionsDescription"
+              >
+                Recepty wystawiane podczas rozmowy – jeśli są wskazania i brak
+                przeciwwskazań.
+              </p>
+            </div>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-4 bg-white shadow rounded h-100">
+              <div class="mb-3 text-primary fs-2">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <h5 data-translate="IndividualCare">Indywidualna opieka</h5>
+              <p
+                class="text-muted small"
+                data-translate="IndividualCareDescription"
+              >
+                Lekarz zna Twoją historię choroby i prowadzi dokumentację.
+              </p>
+            </div>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="p-4 bg-white shadow rounded h-100">
+              <div class="mb-3 text-primary fs-2">
+                <i class="fas fa-house-user"></i>
+              </div>
+              <h5 data-translate="NoLeavingHome">Bez wychodzenia z domu</h5>
+              <p
+                class="text-muted small"
+                data-translate="NoLeavingHomeDescription"
+              >
+                Rozmowy telefoniczne lub wideo – wygodnie i bezpiecznie.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <p class="fs-5">
+            <strong data-translate="Price">Cena:</strong>
+            <span class="text-muted">XXX zł / </span
+            ><span data-translate="Month">miesiąc</span>
           </p>
+          <a
+            href="#rezerwacja"
+            class="btn btn-primary btn-lg"
+            data-translate="OrderCare"
+            >Zamów opiekę</a
+          >
         </div>
       </div>
-
-      <!-- Box 4 -->
-      <div class="col-md-6 col-lg-3 mb-4">
-        <div class="p-4 bg-white shadow rounded h-100">
-          <div class="mb-3 text-primary fs-2">
-            <i class="fas fa-house-user"></i>
-          </div>
-          <h5>Bez wychodzenia z domu</h5>
-          <p class="text-muted small">
-            Rozmowy telefoniczne lub wideo – wygodnie i bezpiecznie.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <p class="fs-5"><strong>Cena:</strong> <span class="text-muted">XXX zł / miesiąc</span></p>
-      <a href="#rezerwacja" class="btn btn-primary btn-lg">Zamów opiekę</a>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Jak się umówić -->
 
@@ -685,6 +727,7 @@
         <p>&copy; 2025 KrukMed24. Wszelkie prawa zastrzeżone.</p>
       </div>
     </footer>
+
     <!-- Tablica z danymi usług -->
     <script src="../js/servicesArray.js"></script>
     <script src="../js/translations.js"></script>
@@ -742,7 +785,6 @@
       }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const path = window.location.pathname.replace(/\/$/, ""); // usuń końcowy /

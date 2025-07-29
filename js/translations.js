@@ -22,9 +22,13 @@ const translations = {
     AboutUs: "O nas",
     FAQ: "FAQ",
     PriceList: "Cennik",
+    Price: "Cena:",
     Doctors: "Lekarze",
     Opinions: "Opinie",
     BookVisit: "Umów wizytę",
+    Career: "Kariera",
+    PaymentMethods: "Wygodne formy płatności:",
+    ConstantTelemedicineCare: "Stała Opieka Telemedyczna",
     OnlineMedConsultations:
       "Konsultacje lekarskie online:<br /><span class='text-highlight'>Zadbamy o Twoje zdrowie</span>",
     HealthCare: "Zadbamy o Twoje zdrowie",
@@ -109,6 +113,20 @@ const translations = {
     CallNow: "Zadzwoń teraz",
     FooterDescription:
       "Nowoczesna opieka medyczna online – bez kolejek i stresu.",
+    RegularContact: "Regularny kontakt z lekarzem",
+    RegularContactDescription:
+      "Comiesięczna rozmowa o Twoim zdrowiu i przebiegu leczenia.",
+    RegularPrescriptions: "Recepty na bieżąco",
+    RegularPrescriptionsDescription:
+      "Recepty wystawiane podczas rozmowy – jeśli są wskazania i brak przeciwwskazań.",
+    IndividualCare: "Indywidualna opieka",
+    IndividualCareDescription:
+      "Lekarz zna Twoją historię choroby i prowadzi dokumentację.",
+    NoLeavingHome: "Bez wychodzenia z domu",
+    NoLeavingHomeDescription:
+      "Rozmowy telefoniczne lub wideo – wygodnie i bezpiecznie.",
+    Month: "miesiąc",
+    OrderCare: "Zamów opiekę",
   },
   en: {
     MainPage: "Home",
@@ -117,9 +135,13 @@ const translations = {
     AboutUs: "About Us",
     FAQ: "FAQ",
     PriceList: "Pricing",
+    Price: "Price:",
     Doctors: "Doctors",
     Opinions: "Testimonials",
     BookVisit: "Book an Appointment",
+    Career: "Career",
+    PaymentMethods: "Convenient Payment Methods:",
+    ConstantTelemedicineCare: "Constant Telemedicine Care",
     OnlineMedConsultations:
       "Online medical consultations:<br /><span class='text-highlight'>We’ll take care of your health</span>",
     HealthCare: "We’ll take care of your health",
@@ -198,6 +220,19 @@ const translations = {
     Email: "Email:",
     CallNow: "Call Now",
     FooterDescription: "Modern online medical care – no queues and no stress.",
+    RegularContact: "Regular contact with the doctor",
+    RegularContactDescription:
+      "Monthly discussions about your health and treatment progress.",
+    RegularPrescriptions: "Ongoing prescriptions",
+    RegularPrescriptionsDescription:
+      "Prescriptions issued during the call – if indicated and no contraindications.",
+    IndividualCare: "Individual care",
+    IndividualCareDescription:
+      "The doctor knows your medical history and manages your treatment.",
+    NoLeavingHome: "No leaving home",
+    NoLeavingHomeDescription: "Phone or video calls – convenient and secure.",
+    Month: "month",
+    OrderCare: "Order Care",
   },
   uk: {
     MainPage: "Головна",
@@ -206,9 +241,13 @@ const translations = {
     AboutUs: "Про нас",
     FAQ: "Питання та відповіді",
     PriceList: "Прайс",
+    Price: "Ціна:",
     Doctors: "Лікарі",
     Opinions: "Відгуки",
     BookVisit: "Записатися на прийом",
+    Career: "Кар'єра",
+    PaymentMethods: "Зручні способи оплати:",
+    ConstantTelemedicineCare: "Постійна телемедична допомога",
     OnlineMedConsultations:
       "Онлайн-консультації:<br /><span class='text-highlight'>Ми дбаємо про ваше здоровʼя</span>",
     HealthCare: "Ми дбаємо про ваше здоровʼя",
@@ -293,5 +332,18 @@ const translations = {
     CallNow: "Зателефонувати зараз",
     FooterDescription:
       "Сучасна медична допомога онлайн — без черг і зайвого стресу.",
+    RegularContact: "Регулярний контакт з лікарем",
+    RegularContactDescription:
+      "Щомісячні розмови про ваше здоров'я і перебіг лікування.",
+    RegularPrescriptions: "Поточні рецепти",
+    RegularPrescriptionsDescription:
+      "Рецепти, що видаються під час розмови — якщо є показання і немає протипоказань.",
+    IndividualCare: "Індивідуальна опіка",
+    IndividualCareDescription:
+      "Лікар знає вашу історію хвороби і веде документацію.",
+    NoLeavingHome: "Без виходу з дому",
+    NoLeavingHomeDescription: "Телефонні або відеодзвінки — зручно і безпечно.",
+    Month: "місяць",
+    OrderCare: "Замовити опіку",
   },
 };
