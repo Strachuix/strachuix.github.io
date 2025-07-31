@@ -460,3 +460,36 @@ input.form-control {
     align-items: flex-start;
   }
 }
+
+/* Powiadomienia */
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-size: 14px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.notification .time {
+  font-size: 12px;
+  color: #6c757d;
+}
