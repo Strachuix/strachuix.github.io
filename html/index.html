@@ -1,749 +1,872 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      KrukMed24 – Telemedycyna, E-recepta Online, Konsultacje Lekarskie 24/7
-    </title>
-    <link rel="icon" type="image/x-icon" href="/images/logop.jpg" />
-    <meta
-      name="description"
-      content="KrukMed24 – szybkie konsultacje lekarskie online, teleporady 24/7, e-recepty i skierowania. Zadbaj o zdrowie bez wychodzenia z domu. Sprawdź naszą ofertę!"
-    />
-    <meta
-      name="keywords"
-      content="telemedycyna, e-recepta, konsultacje online, teleporady lekarskie, KrukMed24, lekarz online 24/7"
-    />
-    <link rel="canonical" href="https://krukmed24.pl/" />
 
-    <!-- Open Graph for Facebook -->
-    <meta
-      property="og:title"
-      content="KrukMed24 – Poradnia Telemedyczna Online"
-    />
-    <meta
-      property="og:description"
-      content="Teleporady, e-recepty, konsultacje online. Zadbaj o zdrowie w 5 minut!"
-    />
-    <meta
-      property="og:image"
-      content="https://krukmed24.pl/img/krukmed24-logo.png"
-    />
-    <meta property="og:url" content="https://krukmed24.pl/" />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    KrukMed24 – Telemedycyna, E-recepta Online, Konsultacje Lekarskie 24/7
+  </title>
+  <link rel="icon" href="/images/logop.jpg" type="image/jpeg" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="KrukMed24 – Telemedycyna Online" />
-    <meta
-      name="twitter:description"
-      content="Szybkie e-recepty, teleporady lekarskie 24/7. Bez wychodzenia z domu."
-    />
-    <meta
-      name="twitter:image"
-      content="https://krukmed24.pl/img/social-preview.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
+  <meta name="description"
+    content="KrukMed24 oferuje szybkie konsultacje lekarskie online, e-recepty i zwolnienia L4. Profesjonalne teleporady 24/7 bez wychodzenia z domu." />
+  <meta name="keywords"
+    content="telemedycyna, e-recepta, konsultacje online, teleporady lekarskie, KrukMed24, lekarz online 24/7, zwolnienie L4 online, skierowanie online" />
+  <link rel="canonical" href="https://krukmed24.pl/" />
 
-  <body>
-    <!-- Nawigacja -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a href="/" class="navbar-brand">
-          <img src="/images/logo.jpg" alt="Logo KrukMed24" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <meta property="og:title" content="KrukMed24 – Telemedycyna Online 24/7" />
+  <meta property="og:description"
+    content="Szybkie teleporady, e-recepty i zwolnienia L4 online. Zadbaj o zdrowie w 5 minut!" />
+  <meta property="og:image" content="https://krukmed24.pl/img/social-preview.jpg" />
+  <meta property="og:url" content="https://krukmed24.pl/" />
+  <meta property="og:type" content="website" />
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav align-items-lg-center">
-            <li class="nav-item">
-              <a href="/" class="nav-link" data-translate="MainPage"
-                >Strona Główna</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/o-nas" class="nav-link" data-translate="AboutUs"
-                >O nas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/uslugi" class="nav-link" data-translate="Services"
-                >Usługi</a
-              >
-            </li>
-            <li class="nav-item">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KrukMed24 – Telemedycyna Online" />
+  <meta name="twitter:description"
+    content="Szybkie e-recepty, teleporady lekarskie i L4 online. Bez wychodzenia z domu." />
+  <meta name="twitter:image" content="https://krukmed24.pl/images/logop.jpg" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <img src="/images/logo.jpg" alt="Logo KrukMed24" loading="lazy" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item">
+            <a href="/" class="nav-link active" data-translate="MainPage">Strona Główna</a>
+          </li>
+          <li class="nav-item">
+            <a href="/o-nas" class="nav-link" data-translate="AboutUs">O nas</a>
+          </li>
+          <li class="nav-item">
+            <a href="/uslugi" class="nav-link" data-translate="Services">Usługi</a>
+          </li>
+          <!-- <li class="nav-item">
               <a href="/cennik" class="nav-link" data-translate="PriceList"
                 >Cennik</a
               >
-            </li>
-            <li class="nav-item">
-              <a href="/lekarze" class="nav-link" data-translate="Doctors"
-                >Lekarze</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/opinie" class="nav-link" data-translate="Opinions"
-                >Opinie</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/faq" class="nav-link" data-translate="FAQ">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/kariera" class="nav-link" data-translate="Career"
-                >Kariera</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/kontakt" class="nav-link" data-translate="Contact"
-                >Kontakt</a
-              >
-            </li>
-          </ul>
-          <a
-            href="/rezerwacje"
-            class="btn btn-login ms-lg-3"
-            data-translate="BookVisit"
-          >
-            Umów wizytę
-          </a>
-          <div class="language-switcher d-flex gap-2 ms-3">
-            <button
-              class="btn btn-light"
-              onclick="changeLanguage('pl')"
-              aria-label="Polski"
-            >
-              PL
-            </button>
-            <button
-              class="btn btn-light"
-              onclick="changeLanguage('en')"
-              aria-label="English"
-            >
-              EN
-            </button>
-            <button
-              class="btn btn-light"
-              onclick="changeLanguage('uk')"
-              aria-label="Українська"
-            >
-              UA
-            </button>
-          </div>
+            </li> -->
+          <li class="nav-item">
+            <a href="/lekarze" class="nav-link" data-translate="Doctors">Lekarze</a>
+          </li>
+          <li class="nav-item">
+            <a href="/opinie" class="nav-link" data-translate="Opinions">Opinie</a>
+          </li>
+          <li class="nav-item">
+            <a href="/faq" class="nav-link" data-translate="FAQ">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="/kariera" class="nav-link" data-translate="Career">Kariera</a>
+          </li>
+          <li class="nav-item">
+            <a href="/kontakt" class="nav-link" data-translate="Contact">Kontakt</a>
+          </li>
+        </ul>
+        <a href="/rezerwacje" class="btn btn-login ms-lg-3" data-translate="BookVisit">
+          Umów wizytę
+        </a>
+        <div class="language-switcher d-flex gap-2 ms-3">
+          <button class="btn btn-outline-light" onclick="changeLanguage('pl')" aria-label="Polski">
+            PL
+          </button>
+          <button class="btn btn-outline-light" onclick="changeLanguage('en')" aria-label="English">
+            EN
+          </button>
+          <button class="btn btn-outline-light" onclick="changeLanguage('uk')" aria-label="Українська">
+            UA
+          </button>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Nagłówek -->
+  <!-- Nagłówek -->
 
-    <section class="consultation-section bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- LEWA KOLUMNA: tekst -->
-          <div class="col-lg-6 text-content">
-            <h2 data-translate="OnlineMedConsultations">
-              Konsultacje lekarskie online:<br /><span class="text-highlight"
-                >Zadbamy o Twoje zdrowie</span
-              >
-            </h2>
-            <p data-translate="HeaderHookText">
-              Potrzebujesz <strong>e-recepty</strong>, <strong>L4</strong> lub
-              <strong>skierowania</strong>? Nasze szybkie konsultacje są
-              dostępne już w <strong>15 minut</strong>.
-            </p>
-            <a
-              href="/rezerwacje"
-              class="btn btn-primary mt-3"
-              data-translate="BookNow"
-              >Umów się teraz</a
-            >
-          </div>
-
-          <!-- PRAWA KOLUMNA: tło z obrazem -->
-          <div class="col-lg-6 image-background d-none d-lg-block"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sekcja o nas -->
-
-    <section class="about-section py-5 bg-light" id="o-nas">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Lewa kolumna: obraz -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img
-              src="/images/team.jpg"
-              alt="O nas – KrukMed24"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-          <!-- Prawa kolumna: treść -->
-          <div class="col-lg-6">
-            <div class="mb-3">
-              <h2
-                class="fw-bold text-center text-lg-start"
-                data-translate="AboutUs"
-              >
-                O nas
-              </h2>
-              <p class="text-muted" data-translate="MeetOurTeam">
-                Poznaj nasz zespół i dowiedz się, dlaczego warto nam zaufać.
-              </p>
-            </div>
-            <p data-translate="WhoAreWe">
-              <strong>Kim jesteśmy?</strong>
-              <br />
-              KrukMed24 to miejsce, w którym łączymy doświadczenie lekarzy z
-              wygodą nowoczesnych rozwiązań.
-            </p>
-            <p data-translate="WhyUs">
-              <strong>Dlaczego My?</strong>
-              <br />
-              Wiemy, jak cenny jest Twój czas i spokój.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sekcja z kafelkami -->
-
-    <section class="tiles-section" id="uslugi">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="ServicesHeader">Nasze usługi</h2>
-          <p class="text-muted" data-translate="ServicesHeader2">
-            Sprawdź, jakie telemedyczne rozwiązania oferujemy – szybko i
-            bezpiecznie.
+  <section id="hero" class="hero-section bg-light text-center text-lg-start">
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-4 fw-bold mb-3 text-primary">
+            Twój Zaufany Partner w Medycynie
+          </h1>
+          <p class="lead mb-4 text-muted">
+            Krukmed24 to zespół lekarzy i specjalistów, którzy łączą wiedzę, doświadczenie i nowoczesne rozwiązania.
+            Naszą misją jest zapewnienie Ci kompleksowej, bezpiecznej i skutecznej opieki medycznej — niezależnie od
+            miejsca i czasu.
           </p>
+          <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
+            <a href="#uslugi" class="btn btn-primary btn-lg px-4 me-md-2">Poznaj Ofertę</a>
+            <a href="#kontakt" class="btn btn-outline-secondary btn-lg px-4">Skontaktuj się</a>
+          </div>
         </div>
-
-        <div class="tile-grid" id="services"></div>
-      </div>
-    </section>
-
-    <section class="py-4 bg-light">
-      <div class="container text-center">
-        <p class="mb-3 fw-semibold" data-translate="PaymentMethods">
-          Wygodne formy płatności:
-        </p>
-        <div
-          class="d-flex justify-content-center align-items-center flex-wrap gap-3"
-        >
-          <img
-            src="https://cdn.brandfetch.io/idtcy388S0/w/820/h/388/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
-            alt="BLIK"
-            height="28"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1280px-Visa.svg.png"
-            alt="Visa"
-            height="28"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-            alt="MasterCard"
-            height="28"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Maestro_Logo.svg"
-            alt="Maestro"
-            height="28"
-          />
+        <div class="col-lg-5 mt-4 mt-lg-0 d-none d-lg-block">
+          <img src="/images/doc.jpg" class="img-fluid hero-image" alt="Nowoczesny sprzęt medyczny" loading="lazy" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Sekcja ze stałą usługą -->
-
-    <!-- Stała Opieka Telemedyczna -->
-
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="ConstantTelemedicineCare">
-            Stała Opieka Telemedyczna
+  <section class="about-section py-5 bg-light" id="o-nas">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="/images/doc-team.jpg" alt="Zespół KrukMed24 - Nasi Eksperci" class="img-fluid rounded-3 shadow-lg"
+            loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold mb-4 text-center text-lg-start text-primary" data-translate="AboutUs">
+            O nas
           </h2>
-          <p class="text-muted" data-translate="TestimonialsDescription">
-            Twój lekarz na stałe – bez wychodzenia z domu.
+          <p class="lead mb-4 text-muted" data-translate="IntroText">
+            W <strong>Krukmed24</strong> wierzymy, że opieka medyczna powinna
+            być prosta, szybka i dostępna zawsze wtedy, gdy jej potrzebujesz.
+            Dlatego stworzyliśmy miejsce, gdzie bez wychodzenia z domu możesz
+            skonsultować się z lekarzem, uzyskać <strong>skierowanie</strong>,
+            czy <strong>L4</strong>
+            – w kilka minut, bez stresu i bez kolejek.
           </p>
+
+          <h3 class="h5 fw-bold mb-3 text-secondary" data-translate="WhyUsStrong">
+            Dlaczego warto nam zaufać?
+          </h3>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start feature-item">
+                <i class="bi bi-patch-check-fill fs-3 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1" data-translate="ExperiencedDoctors">
+                    Nowoczesna medycyna
+                  </h4>
+                  <p class="small text-muted mb-0" data-translate="ExperiencedDoctorsDesc">
+                    Nasz zespół to wykwalifikowani specjaliści z wieloletnim
+                    stażem.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start feature-item">
+                <i class="bi bi-clock-fill fs-3 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1" data-translate="QuickAccess">
+                    Zespół doświadczonych lekarzy
+                  </h4>
+                  <p class="small text-muted mb-0" data-translate="QuickAccessDesc">
+                    Konsultacje dostępne już w 15 minut, bez wychodzenia z
+                    domu.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start feature-item">
+                <i class="bi bi-shield-lock-fill fs-3 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1" data-translate="DataSecurity">
+                    Wszystko online – wygodnie i bezpiecznie
+                  </h4>
+                  <p class="small text-muted mb-0" data-translate="DataSecurityDesc">
+                    Dbamy o Twoją prywatność, stosując najwyższe standardy
+                    ochrony.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start feature-item">
+                <i class="bi bi-heart-fill fs-3 text-primary me-3"></i>
+                <div>
+                  <h4 class="h6 fw-bold mb-1" data-translate="PatientFocus">
+                    Pacjent w Centrum
+                  </h4>
+                  <p class="small text-muted mb-0" data-translate="PatientFocusDesc">
+                    Indywidualne podejście i pełne zrozumienie Twoich potrzeb.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="lead mb-4 text-muted" data-translate="IntroText">
+              Krukmed24 to więcej niż platforma – to nowy standard troski o
+              Twoje zdrowie. Bo zdrowie nie powinno czekac
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja z kafelkami -->
+
+  <section class="tiles-section py-5 bg-light" id="uslugi">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary" data-translate="ServicesHeader">
+          Nasze usługi
+        </h2>
+        <p class="lead text-muted" data-translate="ServicesHeader2">
+          Sprawdź, jakie telemedyczne rozwiązania oferujemy – szybko i
+          bezpiecznie.
+        </p>
+      </div>
+
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">E-recepta</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Kontynuacja dotychczasowego leczenia. Przedłużenie ważności recepty.
+                Wystawienie e-recepty poprzez dobieranie przez lekarza właściwego leku.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 59,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">E-zaświadczenie</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Zaświadczenie o stanie zdrowia dla pracodawcy, szkoły lub uczelni, w
+                pliku PDF.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 99,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Zwolnienie L4</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Szybkie zwolnienie po konsultacji z lekarzem online.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 99,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">E-skierowanie</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Skierowanie na płatne badania diagnostyczne lub obrazowe. Na CITO.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 69,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Teleporada</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Szybka rozmowa z lekarzem o Twoim stanie zdrowia.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 39,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Konsultacja internistyczna</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Porada od lekarza pierwszego kontaktu.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 29,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Tabletki antykoncepcyjne</h5>
+              </div>
+              <p class="text-muted flex-grow-1">E-recepta na tabletki antykoncepcyjne.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 49,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Antykoncepcja "Dzień po"</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Preparat wykorzystywany w celu zapobiegania niechcianej ciąży po odbytym
+                stosunku. Skuteczność do 120h po stosunku.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 45,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Kontynuacja leczenia</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Przedłużenie recepty lub kontynuacja terapii.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 159,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm p-4 h-100 d-flex flex-column">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-check text-primary"></i>
+                <h5 class="ms-3 mb-0 text-primary">Konsultacja pediatryczna</h5>
+              </div>
+              <p class="text-muted flex-grow-1">Pomoc dla Twojego dziecka — bez stresu i kolejek.</p>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Cena: 99,00 zł</h5>
+                <a href="/rezerwacje" class="btn btn-primary">Wybieram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="tile-grid" id="services"></div> -->
+    </div>
+  </section>
+
+  <!-- Sekcja płatności -->
+
+  <section class="py-4 bg-light">
+    <div class="container text-center">
+      <p class="mb-3 fw-semibold" data-translate="PaymentMethods">
+        Wygodne formy płatności:
+      </p>
+      <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+        <img src="https://cdn.brandfetch.io/idtcy388S0/w/820/h/388/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+          alt="BLIK" height="28" loading="lazy" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1280px-Visa.svg.png" alt="Visa"
+          height="28" loading="lazy" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" height="28"
+          loading="lazy" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Maestro_Logo.svg" alt="Maestro" height="28"
+          loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stała Opieka Telemedyczna -->
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary position-relative" data-translate="ServicesHeader">
+          Stała opieka telemedyczna
+        </h2>
+        <p class="lead text-muted" data-translate="ServicesHeader2">
+          Twój lekarz na stałe - bez wychodzenia z domu.
+        </p>
+      </div>
+
+      <div class="row text-center">
+        <!-- Box 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <div class="mb-3 text-primary fs-2">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h5 data-translate="RegularContact">
+              Regularny kontakt z lekarzem
+            </h5>
+            <p class="text-muted small" data-translate="RegularContactDescription">
+              Comiesięczna rozmowa o Twoim zdrowiu i przebiegu leczenia.
+            </p>
+          </div>
         </div>
 
-        <div class="row text-center">
-          <!-- Box 1 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="p-4 bg-white shadow rounded h-100">
-              <div class="mb-3 text-primary fs-2">
-                <i class="fas fa-calendar-check"></i>
-              </div>
-              <h5 data-translate="RegularContact">
-                Regularny kontakt z lekarzem
-              </h5>
-              <p
-                class="text-muted small"
-                data-translate="RegularContactDescription"
-              >
-                Comiesięczna rozmowa o Twoim zdrowiu i przebiegu leczenia.
-              </p>
+        <!-- Box 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <div class="mb-3 text-primary fs-2">
+              <i class="fas fa-prescription-bottle-alt"></i>
             </div>
-          </div>
-
-          <!-- Box 2 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="p-4 bg-white shadow rounded h-100">
-              <div class="mb-3 text-primary fs-2">
-                <i class="fas fa-prescription-bottle-alt"></i>
-              </div>
-              <h5 data-translate="RegularPrescriptions">Recepty na bieżąco</h5>
-              <p
-                class="text-muted small"
-                data-translate="RegularPrescriptionsDescription"
-              >
-                Recepty wystawiane podczas rozmowy – jeśli są wskazania i brak
-                przeciwwskazań.
-              </p>
-            </div>
-          </div>
-
-          <!-- Box 3 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="p-4 bg-white shadow rounded h-100">
-              <div class="mb-3 text-primary fs-2">
-                <i class="fas fa-user-md"></i>
-              </div>
-              <h5 data-translate="IndividualCare">Indywidualna opieka</h5>
-              <p
-                class="text-muted small"
-                data-translate="IndividualCareDescription"
-              >
-                Lekarz zna Twoją historię choroby i prowadzi dokumentację.
-              </p>
-            </div>
-          </div>
-
-          <!-- Box 4 -->
-          <div class="col-md-6 col-lg-3 mb-4">
-            <div class="p-4 bg-white shadow rounded h-100">
-              <div class="mb-3 text-primary fs-2">
-                <i class="fas fa-house-user"></i>
-              </div>
-              <h5 data-translate="NoLeavingHome">Bez wychodzenia z domu</h5>
-              <p
-                class="text-muted small"
-                data-translate="NoLeavingHomeDescription"
-              >
-                Rozmowy telefoniczne lub wideo – wygodnie i bezpiecznie.
-              </p>
-            </div>
+            <h5 data-translate="RegularPrescriptions">Recepty na bieżąco</h5>
+            <p class="text-muted small" data-translate="RegularPrescriptionsDescription">
+              Recepty wystawiane podczas rozmowy – jeśli są wskazania i brak
+              przeciwwskazań.
+            </p>
           </div>
         </div>
 
-        <div class="text-center mt-4">
-          <p class="fs-5">
-            <strong data-translate="Price">Cena:</strong>
-            <span class="text-muted">XXX zł / </span
-            ><span data-translate="Month">miesiąc</span>
-          </p>
-          <a
+        <!-- Box 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <div class="mb-3 text-primary fs-2">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h5 data-translate="IndividualCare">Indywidualna opieka</h5>
+            <p class="text-muted small" data-translate="IndividualCareDescription">
+              Lekarz zna Twoją historię choroby i prowadzi dokumentację.
+            </p>
+          </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="p-4 bg-white shadow rounded h-100">
+            <div class="mb-3 text-primary fs-2">
+              <i class="fas fa-house-user"></i>
+            </div>
+            <h5 data-translate="NoLeavingHome">Bez wychodzenia z domu</h5>
+            <p class="text-muted small" data-translate="NoLeavingHomeDescription">
+              Rozmowy telefoniczne lub wideo – wygodnie i bezpiecznie.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p class="fs-5">
+          <strong data-translate="Price">Cena:</strong>
+          <span class="text-muted">XXX zł / </span><span data-translate="Month">miesiąc</span>
+        </p>
+        <!-- <a
             href="#rezerwacja"
             class="btn btn-primary btn-lg"
             data-translate="OrderCare"
             >Zamów opiekę</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Jak się umówić -->
-
-    <section class="how-to-section py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Obrazek -->
-          <div class="col-md-6 mb-4 mb-md-0">
-            <img
-              src="../images/doc1.jpg"
-              alt="Konsultacja online"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-
-          <!-- Treść kroków -->
-          <div class="col-md-6">
-            <div class="mb-3">
-              <h2
-                class="fw-bold text-center text-lg-start"
-                data-translate="HowToUse"
-              >
-                Jak korzystać z e-konsultacji?
-              </h2>
-              <p class="text-muted" data-translate="HowToUseDescription">
-                Dowiedz się jak skorzystać z e-konsultacji w praktyce.
-              </p>
-            </div>
-            <div class="step mb-4 d-flex">
-              <div class="icon me-3">
-                <i class="fas fa-file-alt"></i>
-              </div>
-              <div>
-                <h5 data-translate="HowToUseStep1">1. Wypełnij formularz</h5>
-                <p data-translate="HowToUseStep1Description">
-                  Odpowiedz na pytania zawarte w formularzu konsultacji.
-                </p>
-              </div>
-            </div>
-            <div class="step mb-4 d-flex">
-              <div class="icon me-3">
-                <i class="fas fa-credit-card"></i>
-              </div>
-              <div>
-                <h5 data-translate="HowToUseStep2">2. Zapłać</h5>
-                <p data-translate="HowToUseStep2Description">
-                  Wybierz jedną z naszych bezpiecznych form płatności i opłać
-                  zamówienie.
-                </p>
-              </div>
-            </div>
-            <div class="step d-flex">
-              <div class="icon me-3">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div>
-                <h5 data-translate="HowToUseStep3">
-                  3. Czekaj na telefon od lekarza
-                </h5>
-                <p data-translate="HowToUseStep3Description">
-                  Krótko po otrzymaniu zamówienia skontaktuje się z Tobą nasz
-                  lekarz.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sekcja opinii -->
-
-    <section class="testimonials-section" id="opinie">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="TestimonialsHeader">
-            Opinie pacjentów
-          </h2>
-          <p class="text-muted" data-translate="TestimonialsDescription">
-            Zobacz, co mówią o nas osoby, które skorzystały z naszych usług.
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <p class="testimonial-text" data-translate="Testimonial1">
-              Szybko, sprawnie i bez wychodzenia z domu! E-recepta przyszła w
-              kilka minut
-            </p>
-            <div class="testimonial-info">
-              <div class="testimonial-name">Anna K.</div>
-              <div class="testimonial-stars">★★★★★</div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="testimonial-text" data-translate="Testimonial2">
-              Bardzo profesjonalne podejście lekarzy. Polecam każdemu, kto ceni
-              sobie czas
-            </p>
-            <div class="testimonial-info">
-              <div class="testimonial-name">Michał Z.</div>
-              <div class="testimonial-stars">★★★★☆</div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="testimonial-text" data-translate="Testimonial3">
-              Zwolnienie L4 otrzymałem tego samego dnia. Usługa naprawdę godna
-              zaufania
-            </p>
-            <div class="testimonial-info">
-              <div class="testimonial-name">Joanna P.</div>
-              <div class="testimonial-stars">★★★★★</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sekcja FAQ -->
-
-    <section class="py-5 bg-light" id="faq">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="FAQHeader">
-            FAQ (Najczęściej zadawane pytania)
-          </h2>
-          <p class="text-muted" data-translate="FAQDescription">
-            Znajdź odpowiedź na najczęściej pojawiające się pytania dotyczące
-            naszych usług.
-          </p>
-        </div>
-
-        <div class="accordion" id="faqAccordion">
-          <!-- Pytanie 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading1">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqCollapse1"
-                aria-expanded="true"
-                aria-controls="faqCollapse1"
-                data-translate="HowDoesOnlineConsultationWork"
-              >
-                Jak wygląda konsultacja online?
-              </button>
-            </h2>
-            <div
-              id="faqCollapse1"
-              class="accordion-collapse collapse show"
-              aria-labelledby="faqHeading1"
-              data-bs-parent="#faqAccordion"
-            >
-              <div
-                class="accordion-body"
-                data-translate="OnlineConsultationProcess"
-              >
-                Konsultacja odbywa się w prosty sposób – po wypełnieniu
-                krótkiego formularza lekarz kontaktuje się z Tobą przez czat,
-                telefon lub wideorozmowę. Najczęściej trwa to kilka minut, a
-                cały proces jest szybki i wygodny.
-              </div>
-            </div>
-          </div>
-
-          <!-- Pytanie 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading2">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqCollapse2"
-                aria-expanded="false"
-                aria-controls="faqCollapse2"
-                data-translate="WillIGetPrescriptionAfterConsultation"
-              >
-                Czy otrzymam receptę po rozmowie?
-              </button>
-            </h2>
-            <div
-              id="faqCollapse2"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqHeading2"
-              data-bs-parent="#faqAccordion"
-            >
-              <div
-                class="accordion-body"
-                data-translate="PrescriptionAfterConsultation"
-              >
-                Tak, jeśli lekarz uzna to za zasadne, wystawia e-receptę zaraz
-                po zakończeniu konsultacji. Kod recepty dostajesz w wiadomości
-                SMS oraz e-mail – możesz go zrealizować w każdej aptece.
-              </div>
-            </div>
-          </div>
-
-          <!-- Pytanie 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading3">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqCollapse3"
-                aria-expanded="false"
-                aria-controls="faqCollapse3"
-                data-translate="HowLongToWaitForDoctor"
-              >
-                Jak długo czekam na lekarza?
-              </button>
-            </h2>
-            <div
-              id="faqCollapse3"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqHeading3"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body" data-translate="WaitingTimeForDoctor">
-                W większości przypadków lekarz odpowiada w ciągu 10–15 minut. W
-                godzinach nocnych czas może być nieco dłuższy, ale zwykle nie
-                przekracza 30 minut.
-              </div>
-            </div>
-          </div>
-
-          <!-- Pytanie 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading4">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqCollapse4"
-                aria-expanded="false"
-                aria-controls="faqCollapse4"
-                data-translate="CanIGetSickLeaveOnline"
-              >
-                Czy mogę otrzymać L4 przez internet?
-              </button>
-            </h2>
-            <div
-              id="faqCollapse4"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqHeading4"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body" data-translate="SickLeaveOnline">
-                Tak, jeśli lekarz stwierdzi potrzebę wystawienia zwolnienia,
-                e-ZLA trafia automatycznie do ZUS i Twojego pracodawcy. Nie
-                musisz niczego drukować ani dostarczać osobiście.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontakt -->
-
-    <section class="contact-section py-5 bg-light" id="kontakt">
-      <div class="container text-center">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold" data-translate="Contact">Kontakt</h2>
-          <p class="text-muted" data-translate="ContactDescription">
-            Masz pytania? Skontaktuj się z nami – jesteśmy dostępni 24/7.
-          </p>
-        </div>
-
-        <p class="mb-4" data-translate="ContactUs">
-          Masz pytania dotyczące konsultacji online? Jesteśmy do Twojej
-          dyspozycji 7 dni w tygodniu.
-        </p>
-
-        <div class="contact-info mb-4">
-          <p>
-            <i class="fas fa-phone-alt me-2"></i
-            ><strong data-translate="Phone">Telefon:</strong>
-            <a href="tel:+48123456789">+48 123 456 789</a>
-          </p>
-          <p>
-            <i class="fas fa-envelope me-2"></i
-            ><strong data-translate="Email">E-mail:</strong>
-            <a href="mailto:kontakt@123.pl">kontakt@123.pl</a>
-          </p>
-        </div>
-
-        <div class="social-icons mb-4">
-          <a href="/" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="/" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-
-        <!-- CTA dla mobile -->
-        <a
-          href="tel:+48123456789"
-          class="btn btn-primary d-inline-block d-md-none"
-          data-translate="CallNow"
-          >Zadzwoń teraz</a
-        >
-      </div>
-    </section>
-
-    <!-- Stopka -->
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3 class="footer-logo" data-translate="KrukMed24">KrukMed24</h3>
-          <p class="footer-description" data-translate="FooterDescription">
-            Nowoczesna opieka medyczna online – bez kolejek i stresu.
-          </p>
-        </div>
-
-        <div class="footer-column">
-          <h4>Oferta</h4>
-          <ul class="footer-links">
-            <li><a href="/" data-translate="EPrescription">E-recepta</a></li>
-            <li><a href="/" data-translate="SickLeave">Zwolnienie L4</a></li>
-            <li><a href="/" data-translate="Referral">Skierowanie</a></li>
-            <li>
-              <a href="/" data-translate="Teleconsultation"
-                >Konsultacja online</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4 data-translate="Contact">Kontakt</h4>
-          <p><span data-translate="Email">Email:</span> kontakt@123.pl</p>
-          <p><span data-translate="Phone">Telefon:</span> +48 123 456 789</p>
-          <div class="socials">
-            <a href="/"><i class="fab fa-facebook-f"></i></a>
-            <a href="/"><i class="fab fa-instagram"></i></a>
-            <a href="/"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 KrukMed24. Wszelkie prawa zastrzeżone.</p>
-      </div>
-    </footer>
-
-    <!-- Tablica z danymi usług -->
-    <script src="../js/servicesArray.js"></script>
-    <script src="../js/translations.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <div id="notification" class="notification hidden">
-      <div class="notification-icon">
-        <i class="fas fa-calendar-check"></i>
-      </div>
-      <div class="notification-content">
-        <p>
-          <strong>Dominika D.</strong> otrzymała właśnie
-          <strong>E-zwolnienie</strong>
-        </p>
-        <span class="time">11 minut temu</span>
+          > -->
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- Jak się umówić -->
+
+  <section class="how-to-section py-5 bg-light" id="jak-korzystac">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0 order-md-2">
+          <img src="/images/doc1.jpg" alt="Konsultacja online krok po kroku" class="img-fluid" loading="lazy" />
+        </div>
+
+        <div class="col-md-6 order-md-1">
+          <div class="text-center text-md-start mb-4">
+            <h2 class="display-5 fw-bold mb-3 text-primary" data-translate="HowToUse">
+              Jak korzystać z e-konsultacji?
+            </h2>
+            <p class="lead text-muted" data-translate="HowToUseDescription">
+              Dowiedz się, jak prosto i szybko możesz skorzystać z naszych
+              usług telemedycznych w kilku krokach.
+            </p>
+          </div>
+
+          <div class="step-item d-flex align-items-start mb-4">
+            <div class="step-number flex-shrink-0 me-3">1</div>
+            <div>
+              <h5 class="fw-bold mb-1" data-translate="HowToUseStep1">
+                Wypełnij formularz
+              </h5>
+              <p class="text-muted mb-0" data-translate="HowToUseStep1Description">
+                Odpowiedz na pytania zawarte w formularzu konsultacji.
+                Zbierzemy niezbędne informacje do Twojej wizyty.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item d-flex align-items-start mb-4">
+            <div class="step-number flex-shrink-0 me-3">2</div>
+            <div>
+              <h5 class="fw-bold mb-1" data-translate="HowToUseStep2">
+                Opłać wizytę
+              </h5>
+              <p class="text-muted mb-0" data-translate="HowToUseStep2Description">
+                Wybierz jedną z naszych bezpiecznych i wygodnych form
+                płatności online.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-item d-flex align-items-start">
+            <div class="step-number flex-shrink-0 me-3">3</div>
+            <div>
+              <h5 class="fw-bold mb-1" data-translate="HowToUseStep3">
+                Czekaj na kontakt od lekarza
+              </h5>
+              <p class="text-muted mb-0" data-translate="HowToUseStep3Description">
+                Nasz lekarz skontaktuje się z Tobą telefonicznie w umówionym
+                terminie lub krótko po otrzymaniu zamówienia.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center text-md-start mt-4">
+            <a href="/rezerwacje" class="btn btn-primary btn-lg" data-translate="BookNowCTA">Umów wizytę teraz <i
+                class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja opinii -->
+
+  <section class="testimonials-section" id="opinie">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary" data-translate="ServicesHeader">
+          Opinie pacjentów
+        </h2>
+        <p class="lead text-muted" data-translate="ServicesHeader2">
+          Zobacz, co mówią o nas osoby, które skorzystały z naszych usług.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-translate="Testimonial1">
+            Szybko, sprawnie i bez wychodzenia z domu. Recepta przyszła w
+            kilka minut
+          </p>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Anna K.</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-translate="Testimonial2">
+            Bardzo profesjonalne podejście lekarzy. Polecam każdemu, kto ceni
+            sobie czas
+          </p>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Michał Z.</div>
+            <div class="testimonial-stars">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text" data-translate="Testimonial3">
+            Zwolnienie L4 otrzymałem tego samego dnia. Usługa naprawdę godna
+            zaufania
+          </p>
+          <div class="testimonial-info">
+            <div class="testimonial-name">Joanna P.</div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja FAQ -->
+
+  <section class="py-5 bg-light" id="faq">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary" data-translate="ServicesHeader">
+          FAQ (Najczęściej zadawane pytania)
+        </h2>
+        <p class="lead text-muted" data-translate="ServicesHeader2">
+          Znajdź odpowiedź na najczęściej pojawiające się pytania dotyczące
+          naszych usług.
+        </p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- Pytanie 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
+              aria-expanded="true" aria-controls="faqCollapse1" data-translate="HowDoesOnlineConsultationWork">
+              Jak wygląda konsultacja online?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="OnlineConsultationProcess">
+              Konsultacja odbywa się w prosty sposób – po wypełnieniu
+              krótkiego formularza lekarz kontaktuje się z Tobą przez czat,
+              telefon lub wideorozmowę. Najczęściej trwa to kilka minut, a
+              cały proces jest szybki i wygodny.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pytanie 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2"
+              data-translate="WillIGetPrescriptionAfterConsultation">
+              Czy otrzymam receptę po rozmowie?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="PrescriptionAfterConsultation">
+              Tak, jeśli lekarz uzna to za zasadne, wystawia e-receptę zaraz
+              po zakończeniu konsultacji. Kod recepty dostajesz w wiadomości
+              SMS oraz e-mail – możesz go zrealizować w każdej aptece.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pytanie 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3"
+              data-translate="HowLongToWaitForDoctor">
+              Jak długo czekam na lekarza?
+            </button>
+          </h2>
+          <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="WaitingTimeForDoctor">
+              W większości przypadków lekarz odpowiada w ciągu 10–15 minut. W
+              godzinach nocnych czas może być nieco dłuższy, ale zwykle nie
+              przekracza 30 minut.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pytanie 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4"
+              data-translate="CanIGetSickLeaveOnline">
+              Czy mogę otrzymać L4 przez internet?
+            </button>
+          </h2>
+          <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body" data-translate="SickLeaveOnline">
+              Tak, jeśli lekarz stwierdzi potrzebę wystawienia zwolnienia,
+              e-ZLA trafia automatycznie do ZUS i Twojego pracodawcy. Nie
+              musisz niczego drukować ani dostarczać osobiście.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+
+  <section class="contact-section py-5 bg-light" id="kontakt">
+    <div class="container text-center">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3 text-primary" data-translate="ServicesHeader">
+          Kontakt
+        </h2>
+        <p class="lead text-muted" data-translate="ServicesHeader2">
+          Masz pytania? Skontaktuj się z nami – jesteśmy dostępni 24/7.
+        </p>
+      </div>
+
+      <div class="contact-info mb-4">
+        <p>
+          <i class="fas fa-phone-alt me-2"></i><strong data-translate="Phone">Telefon:</strong>
+          <a href="tel:+48123456789">+48 123 456 789</a>
+        </p>
+        <p>
+          <i class="fas fa-envelope me-2"></i><strong data-translate="Email">E-mail:</strong>
+          <a href="mailto:kontakt@123.pl">kontakt@123.pl</a>
+        </p>
+      </div>
+
+      <div class="social-icons mb-4">
+        <a href="/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <!-- CTA dla mobile -->
+      <a href="tel:+48123456789" class="btn btn-primary d-inline-block d-md-none" data-translate="CallNow">Zadzwoń
+        teraz</a>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3 class="footer-logo" data-translate="KrukMed24">KrukMed24</h3>
+        <p class="footer-description" data-translate="FooterDescription">
+          Nowoczesna opieka medyczna online – bez kolejek i stresu.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Oferta</h4>
+        <ul class="footer-links">
+          <li><a href="/" data-translate="EPrescription">E-recepta</a></li>
+          <li><a href="/" data-translate="SickLeave">Zwolnienie L4</a></li>
+          <li><a href="/" data-translate="Referral">Skierowanie</a></li>
+          <li>
+            <a href="/" data-translate="Teleconsultation">Konsultacja online</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 data-translate="Contact">Kontakt</h4>
+        <p><span data-translate="Email">Email:</span> kontakt@123.pl</p>
+        <p><span data-translate="Phone">Telefon:</span> +48 123 456 789</p>
+        <div class="socials">
+          <a href="/"><i class="fab fa-facebook-f"></i></a>
+          <a href="/"><i class="fab fa-instagram"></i></a>
+          <a href="/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KrukMed24. Wszelkie prawa zastrzeżone.</p>
+      <p style="font-size: 10px">
+        Uwaga: Lekarz udzielający świadczenia w ramach telemedycyny ma prawo
+        odmówić realizacji usługi (np. wystawienia recepty, zwolnienia
+        lekarskiego, skierowania itp.), jeśli na podstawie przeprowadzonego
+        wywiadu i oceny stanu zdrowia pacjenta uzna, że brak jest medycznych
+        wskazań do jej wykonania. Decyzja lekarza podejmowana jest każdorazowo
+        zgodnie z aktualną wiedzą medyczną i jego niezależną oceną kliniczna.
+        Zakup usługi nie gwarantuje jej realizacji w formie oczekiwanej przez
+        pacjenta. Ostateczna decyzja należy do lekarza i zależy od medycznych
+        wskazań.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/servicesArray.js"></script>
+  <script src="../js/translations.js"></script>
+
+  <script>
+    // Funkcja do dynamicznego generowania kafelków na podstawie danych z 'servicesArray.js'
+    function generateTiles(lang) {
+      const tileGrid = $("#services");
+      tileGrid.empty(); // Wyczyść istniejące kafelki
+
+      services.forEach((service) => {
+        const cardHtml = `
+                  <div class="card">
+                      <div class="card-content">
+                          <h3 class="card-title" data-translate="${service.translate.title}">
+                              ${translations[lang][service.translate.title] || service.title}
+                          </h3>
+                          <span class="card-price">
+                              <span data-translate="PricePrefix">od</span> ${service.price}
+                          </span>
+                          <p class="card-desc" data-translate="${service.translate.description}">
+                              ${translations[lang][service.translate.description] || service.description}
+                          </p>
+                      </div>
+                      <a href="/rezerwacje" class="card-button" data-translate="Wypełnij formularz">
+                          ${translations[lang]["Wypełnij formularz"] || "Wypełnij formularz"}
+                      </a>
+                  </div>
+              `;
+        tileGrid.append(cardHtml);
+      });
+    }
+
+    // Wywołaj generowanie kafelków po załadowaniu strony z domyślnym językiem
+    $(document).ready(function () {
+      generateTiles("pl");
+    });
+
+    // Obsługa zmiany języka - funkcja do wywołania po kliknięciu
+    function changeLanguage(lang) {
+      generateTiles(lang); // Przeładuj kafelki z nowym językiem
+      translate(lang); // Przeładuj pozostałe tłumaczenia
+    }
+
+    // Uproszczony i zoptymalizowany skrypt do przewijania strony
+    document.addEventListener("DOMContentLoaded", function () {
+      const path = window.location.pathname.replace(/\/$/, "");
+      const sections = {
+        "/o-nas": "o-nas",
+        "/uslugi": "uslugi",
+        "/opinie": "opinie",
+        "/faq": "faq",
+        "/kontakt": "kontakt",
+      };
+      const targetId = sections[path];
+      if (targetId) {
+        document.getElementById(targetId)?.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+    });
+  </script>
+  <div id="notification" class="notification hidden">
+    <div class="notification-icon">
+      <i class="fas fa-calendar-check"></i>
+    </div>
+    <div class="notification-content">
+      <p>
+        <strong>Dominika D.</strong> otrzymała właśnie
+        <strong>E-zwolnienie</strong>
+      </p>
+      <span class="time">11 minut temu</span>
+    </div>
+  </div>
+</body>
+
 </html>

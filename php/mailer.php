@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Konfiguracja e-maila
-    $to = "rekrutacja@krukmed24.pl"; // Adres odbiorcy
+    $to = "koziol.natalia03@gmail.com"; // Adres odbiorcy
     $subject = "Nowa aplikacja od $name";
     $headers = "From: $email\r\n";
     $headers .= "Content-Type: multipart/mixed; boundary=\"boundary\"\r\n";
