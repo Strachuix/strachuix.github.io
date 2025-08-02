@@ -149,3 +149,28 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const testimonialsContainer = document.getElementById("testimonials-container");
+
+  // Losuj 3 opinie z testimonialsArray
+  const randomTestimonials = testimonialsArray
+    .sort(() => 0.5 - Math.random()) // Losowe sortowanie
+    .slice(0, 3); // Pobierz pierwsze 3 elementy
+
+  randomTestimonials.forEach((testimonial) => {
+    const testimonialCard = `
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <p class="text-muted small">${testimonial.date}</p>
+            <h5 class="card-title fw-bold">${testimonial.name}</h5>
+            <p class="card-text">${testimonial.opinion}</p>
+            <div class="stars">${testimonial.stars}</div>
+          </div>
+        </div>
+      </div>
+    `;
+    testimonialsContainer.innerHTML += testimonialCard;
+  });
+});
