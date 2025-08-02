@@ -11,7 +11,7 @@ function generateTiles(lang) {
       <div class="col-md-4">
         <div class="card border-0 shadow-sm mb-4">
           <div class="card-body">
-            <!-- Tu sobie możesz dodać ikonkę czy coś -->
+            ${service.icon}
             <h5 class="card-title fw-bold" data-translate="${service.translate.title}">
               ${translations[lang][service.translate.title] || service.title}
             </h5>
