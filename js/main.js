@@ -37,7 +37,7 @@ function generateTiles(lang) {
 
 // Wywołaj generowanie kafelków po załadowaniu strony
 $(document).ready(function () {
-  generateTiles("pl"); // Domyślny język
+  changeLanguage("pl"); // Domyślny język
 });
 
 // Obsługa zmiany języka
@@ -45,6 +45,7 @@ function changeLanguage(lang) {
   generateTiles(lang); // Przeładuj kafelki z nowym językiem
   translate(lang); // Przeładuj tłumaczenia
   showNotification(lang); // Uruchom powiadomienia w wybranym języku
+  generateTestimonials(lang); // Generuj opinie w wybranym języku
 }
 
 function getRandomNotification(lang = "pl") {
@@ -147,9 +148,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+function generateTestimonials(lang){
   const testimonialsContainer = document.getElementById("testimonials-container");
 
+  testimonialsContainer.innerHTML = ""; // Wyczyść istniejące opinie
+  
   // Losuj 3 opinie z testimonialsArray
   const randomTestimonials = testimonialsArray
     .sort(() => 0.5 - Math.random()) // Losowe sortowanie
@@ -162,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-body">
             <p class="text-muted small">${testimonial.date}</p>
             <h5 class="card-title fw-bold">${testimonial.name}</h5>
-            <p class="card-text">${testimonial.opinion}</p>
+            <p class="card-text">${testimonial.opinions[lang]}</p>
             <div class="stars">${testimonial.stars}</div>
           </div>
         </div>
@@ -170,4 +173,4 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     testimonialsContainer.innerHTML += testimonialCard;
   });
-});
+};
