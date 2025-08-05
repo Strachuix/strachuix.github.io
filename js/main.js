@@ -71,14 +71,31 @@ const messages = [
   {
     name: "Dominika D.",
     action: "otrzymała właśnie E-zwolnienie",
+    time: "8 minut temu",
+  },
+  {
+    name: "Marcin P.",
+    action: "otrzymał właśnie E-recepte",
+    time: "minute temu",
+  },
+  {
+    name: "Marek B.",
+    action: "otrzymał właśnie E-skierowanie",
     time: "11 minut temu",
+  },
+  {
+    name: "Dagmara C.",
+    action: "zarezerwowała właśnie konsultacje internistyczną",
+    time: "2 minuty temu",
   },
   {
     name: "Michał Z.",
     action: "zarezerwował konsultację online",
     time: "5 minut temu",
   },
-  { name: "Anna K.", action: "otrzymała receptę", time: "2 minuty temu" },
+  { name: "Anna K.", 
+    action: "otrzymała receptę", 
+    time: "2 minuty temu" },
 ];
 
 function showNotification(lang = "pl") {

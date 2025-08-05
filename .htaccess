@@ -1,6 +1,22 @@
+Options -Indexes
 Options -MultiViews
 RewriteEngine On
 RewriteBase /
+
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<FilesMatch "(mailer\.php)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(js)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
@@ -8,6 +24,9 @@ RewriteRule ^ - [L]
 
 RewriteRule ^(o-nas|uslugi|opinie|faq|kontakt)/?$ index.html [L]
 RewriteRule ^rezerwacje/?$ bookvisit.html [L]
+RewriteRule ^polityka-prywatnosci/?$ polityka-prywatnosci.html [L]
+RewriteRule ^regulamin/?$ regulamin.html [L]
 RewriteRule ^cennik/?$ pricing.html [L]
 RewriteRule ^lekarze/?$ doctors.html [L]
 RewriteRule ^kariera/?$ carrer.html [L]
+
