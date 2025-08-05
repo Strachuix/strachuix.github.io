@@ -3,44 +3,41 @@ function generateTiles(lang) {
   const tileGrid = $("#services");
   tileGrid.empty(); // Wyczyść istniejące kafelki
 
+  const rowHtml = `<div class="row g-4 d-flex align-items-stretch" id="service-row"></div>`;
+  tileGrid.append(rowHtml);
+
   services.forEach((service) => {
     const cardHtml = `
-            <div class="card">
-              <div class="card-content">
-                <h2 class="card-title" data-translate="${
-                  service.translate.title
-                }">
-                  ${
-                    translations[lang][service.translate.title] || service.title
-                  }
-                </h2>
-                <span class="card-price">
-                  <span data-translate="PricePrefix">od</span> ${service.price}
-                </span>
-                <p class="card-desc" data-translate="${
-                  service.translate.description
-                }">
-                  ${
-                    translations[lang][service.translate.description] ||
-                    service.description
-                  }
-                </p>
-              </div>
-              <a href="/rezerwacje" class="card-button" data-translate="Wypełnij formularz">
-                ${
-                  translations[lang]["Wypełnij formularz"] ||
-                  "Wypełnij formularz"
-                }
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body">
+            ${service.icon}
+            <h5 class="card-title fw-bold" data-translate="${service.translate.title}">
+              ${translations[lang][service.translate.title] || service.title}
+            </h5>
+            <p class="card-text" data-translate="${service.translate.description}">
+              ${translations[lang][service.translate.description] || service.description}
+            </p>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="card-price fw-bold">
+                <span data-translate="PricePrefix">Cena:</span> ${service.price}
+              </span>
+              <a href="/rezerwacje" class="btn btn-primary" data-translate="Wybieram">
+                ${translations[lang]["Wybieram"] || "Wybieram"}
               </a>
             </div>
-          `;
-    tileGrid.append(cardHtml);
+          </div>
+        </div>
+      </div>
+    `;
+    $("#service-row").append(cardHtml);
   });
 }
 
 // Wywołaj generowanie kafelków po załadowaniu strony
 $(document).ready(function () {
-  generateTiles("pl"); // Domyślny język
+  changeLanguage("pl"); // Domyślny język
 });
 
 // Obsługa zmiany języka
@@ -48,6 +45,7 @@ function changeLanguage(lang) {
   generateTiles(lang); // Przeładuj kafelki z nowym językiem
   translate(lang); // Przeładuj tłumaczenia
   showNotification(lang); // Uruchom powiadomienia w wybranym języku
+  generateTestimonials(lang); // Generuj opinie w wybranym języku
 }
 
 function getRandomNotification(lang = "pl") {
@@ -167,9 +165,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+function generateTestimonials(lang){
   const testimonialsContainer = document.getElementById("testimonials-container");
 
+  testimonialsContainer.innerHTML = ""; // Wyczyść istniejące opinie
+  
   // Losuj 3 opinie z testimonialsArray
   const randomTestimonials = testimonialsArray
     .sort(() => 0.5 - Math.random()) // Losowe sortowanie
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-body">
             <p class="text-muted small">${testimonial.date}</p>
             <h5 class="card-title fw-bold">${testimonial.name}</h5>
-            <p class="card-text">${testimonial.opinion}</p>
+            <p class="card-text">${testimonial.opinions[lang]}</p>
             <div class="stars">${testimonial.stars}</div>
           </div>
         </div>
@@ -190,4 +190,4 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     testimonialsContainer.innerHTML += testimonialCard;
   });
-});
+};
