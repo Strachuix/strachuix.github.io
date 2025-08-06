@@ -8,15 +8,17 @@ RewriteBase /
     Deny from all
 </Files>
 
-<FilesMatch "(mailer\.php)">
-    Order allow,deny
-    Deny from all
-</FilesMatch>
+# <FilesMatch "(mailer\.php)">
+#     Order allow,deny
+#     Deny from all
+# </FilesMatch>
 
-<FilesMatch "\.(js)$">
-    Order allow,deny
-    Deny from all
-</FilesMatch>
+# <FilesMatch "\.(js)$">
+#     SetEnvIf Referer "^https?://(www\.)?krukmed24\.pl" allow_js
+#     Order allow,deny
+#     Allow from env=allow_js
+#     Deny from all
+# </FilesMatch>
 
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
