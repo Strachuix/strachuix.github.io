@@ -1,3 +1,5 @@
+let currentLanguage = "pl"; // Domyślny język
+
 // Funkcja do generowania kafelków z tłumaczeniami
 function generateTiles(lang) {
   const tileGrid = $("#services");
@@ -43,13 +45,20 @@ function generateTiles(lang) {
 
 // Wywołaj generowanie kafelków po załadowaniu strony
 $(document).ready(function () {
-  changeLanguage("pl"); // Domyślny język
+  changeLanguage(currentLanguage); // Domyślny język
 });
 
 let notificationTimeout; // Globalna zmienna do przechowywania identyfikatora timeout
+let countdownInterval; // Globalna zmienna do przechowywania identyfikatora interwału
 
 // Obsługa zmiany języka
 function changeLanguage(lang) {
+
+  if(currentLanguage === lang) {
+    return; // Jeśli język jest już ustawiony, nie rób nic
+  }
+  currentLanguage = lang; // Ustaw nowy język
+
   // Zatrzymaj wywoływanie funkcji showNotification
   if (notificationTimeout) {
     clearTimeout(notificationTimeout);
@@ -58,14 +67,14 @@ function changeLanguage(lang) {
   // Przeładuj kafelki z nowym językiem
   generateTiles(lang);
 
-  // Przeładuj tłumaczenia
-  translate(lang);
-
   // Uruchom powiadomienia w wybranym języku
   showNotification(lang);
 
   // Generuj opinie w wybranym języku
   generateTestimonials(lang);
+
+    // Przeładuj tłumaczenia
+  translate(lang);
 }
 
 function getRandomNotification(lang = "pl") {
@@ -117,7 +126,15 @@ const messages = [
 function showNotification(lang = "pl") {
   const notification = document.getElementById("notification");
 
-  // Pobierz losowe dane
+  // Wyczyść poprzedni timeout i interwał, jeśli istnieją
+  if (notificationTimeout) {
+    clearTimeout(notificationTimeout);
+  }
+  if (countdownInterval) {
+    clearInterval(countdownInterval);
+  }
+
+  // Wygeneruj losowe dane powiadomienia
   const randomMessage = getRandomNotification(lang);
   notification.innerHTML = `
     <div class="notification-icon">
@@ -137,11 +154,23 @@ function showNotification(lang = "pl") {
     notification.classList.add("hidden");
   }, 8000);
 
-  // Losuj czas do następnego powiadomienia (10–30 sekund)
+  // Oblicz czas do następnego powiadomienia (10–30 sekund)
   const nextNotificationTime =
     Math.floor(Math.random() * (30 - 10 + 1) + 10) * 1000;
 
-  // Zapisz identyfikator timeout w globalnej zmiennej
+  // Rozpocznij odliczanie w konsoli
+  let secondsLeft = nextNotificationTime / 1000;
+  countdownInterval = setInterval(() => {
+    console.log(
+      `Kolejne powiadomienie w języku "${lang}" za ${secondsLeft} sekund.`
+    );
+    secondsLeft--;
+    if (secondsLeft <= 0) {
+      clearInterval(countdownInterval);
+    }
+  }, 1000);
+
+  // Ustaw timeout dla następnego powiadomienia
   notificationTimeout = setTimeout(() => showNotification(lang), nextNotificationTime);
 }
 
