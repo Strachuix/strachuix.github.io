@@ -883,10 +883,10 @@
       <div class="container my-5">
         <div class="row align-items-center">
           <div class="col-lg-7">
-            <h1 class="display-4 fw-bold mb-3 text-primary">
+            <h1 class="display-4 fw-bold mb-3 text-primary" data-translate="CareerHeader">
               Dołącz do naszego zespołu
             </h1>
-            <p class="lead mb-4 text-muted">
+            <p class="lead mb-4 text-muted" data-translate="CareerDescription">
               Chcesz rozwijać swoją karierę w przyjaznym i nowoczesnym
               środowisku? W KrukMed24 cenimy profesjonalizm, współpracę i pasję
               do medycyny. Czekamy na specjalistów, którzy chcą razem z nami
@@ -898,7 +898,7 @@
               <a
                 href="#formularz-aplikacyjny"
                 class="btn btn-primary btn-lg px-4 me-md-2"
-                data-translate="BookNow"
+                data-translate="ContactUs"
                 >Skontaktuj się</a
               >
             </div>
@@ -921,11 +921,11 @@
         <div class="text-center mb-5">
           <h2
             class="display-5 fw-bold mb-3 text-primary"
-            data-translate="ServicesHeader"
+            data-translate="CurrentOffersHeader"
           >
             Aktualne oferty pracy
           </h2>
-          <p class="lead text-muted" data-translate="ServicesHeader2">
+          <p class="lead text-muted" data-translate="CurrentOffersDescription">
             Dostępne stanowiska w KrukMed24.
           </p>
         </div>
@@ -934,17 +934,17 @@
             <div class="card shadow rounded h-100">
               <div class="card-body">
                 <h5 class="card-title fw-bold">Lekarz</h5>
-                <p class="card-text">
+                <p class="card-text" data-translate="DoctorDescription">
                   Szukamy lekarzy z doświadczeniem, którzy chcą wspierać
                   pacjentów online.
                 </p>
                 <ul>
-                  <li>Wymagane prawo wykonywania zawodu</li>
-                  <li>
+                  <li data-translate="DoctorRequirement1">Wymagane prawo wykonywania zawodu</li>
+                  <li data-translate="DoctorRequirement2">
                     Mile widziana specjalizacja lub w trakcie specjalizacji
                   </li>
                 </ul>
-                <a href="#formularz-aplikacyjny" class="btn btn-primary mt-3"
+                <a href="#formularz-aplikacyjny" class="btn btn-primary mt-3" data-translate="ApplyNow">
                   >Aplikuj</a
                 >
               </div>
@@ -954,18 +954,18 @@
           <div class="col-md-6 mb-4">
             <div class="card shadow rounded h-100">
               <div class="card-body">
-                <h5 class="card-title fw-bold">
+                <h5 class="card-title fw-bold" data-translate="PatientServiceSpecialist">
                   Specjalista ds. obsługi pacjenta
                 </h5>
-                <p class="card-text">
+                <p class="card-text" data-translate="PatientServiceDescription">
                   Poszukujemy osób do kontaktu z pacjentami i wsparcia
                   administracyjnego.
                 </p>
                 <ul>
-                  <li>Wysoka kultura osobista</li>
-                  <li>Doświadczenie w obsłudze klienta</li>
+                  <li data-translate="PatientServiceRequirement1">Wysoka kultura osobista</li>
+                  <li data-translate="PatientServiceRequirement2">Doświadczenie w obsłudze klienta</li>
                 </ul>
-                <a href="#formularz-aplikacyjny" class="btn btn-primary mt-3"
+                <a href="#formularz-aplikacyjny" class="btn btn-primary mt-3" data-translate="ApplyNow"
                   >Aplikuj</a
                 >
               </div>
@@ -981,11 +981,11 @@
         <div class="text-center mb-5">
           <h2
             class="display-5 fw-bold mb-3 text-primary"
-            data-translate="ServicesHeader"
+            data-translate="ApplicationFormHeader"
           >
             Formularz aplikacyjny
           </h2>
-          <p class="lead text-muted" data-translate="ServicesHeader2">
+          <p class="lead text-muted" data-translate="ApplicationFormDescription">
             Aplikuj na stanowiska w KrukMed24.
           </p>
         </div>
@@ -993,7 +993,7 @@
           <div class="col-lg-8">
             <form id="applicationForm" enctype="multipart/form-data">
               <div class="mb-3">
-                <label for="name" class="form-label">Imię i nazwisko</label>
+                <label for="name" class="form-label" data-translate="NameLabel">Imię i nazwisko</label>
                 <input
                   type="text"
                   class="form-control"
@@ -1004,7 +1004,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Adres e-mail</label>
+                <label for="email" class="form-label" data-translate="EmailLabel">Adres e-mail</label>
                 <input
                   type="email"
                   class="form-control"
@@ -1015,7 +1015,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="cv" class="form-label">Dołącz CV</label>
+                <label for="cv" class="form-label" data-translate="CVLabel">Dołącz CV</label>
                 <input
                   type="file"
                   class="form-control"
@@ -1026,7 +1026,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">Wiadomość</label>
+                <label for="message" class="form-label" data-translate="MessageLabel">Wiadomość</label>
                 <textarea
                   class="form-control"
                   id="message"
@@ -1043,12 +1043,12 @@
                   name="rodo"
                   required
                 />
-                <label class="form-check-label" for="rodo"
+                <label class="form-check-label" for="rodo" data-translate="RodoConsent"
                   >Wyrażam zgodę na przetwarzanie danych osobowych w celu
                   rekrutacji.</label
                 >
               </div>
-              <button type="submit" class="btn btn-primary w-100">
+              <button type="submit" class="btn btn-primary w-100" data-translate="SubmitApplication">
                 Wyślij aplikację
               </button>
             </form>
@@ -1064,11 +1064,11 @@
         <div class="text-center mb-5">
           <h2
             class="display-5 fw-bold mb-3 text-primary"
-            data-translate="ServicesHeader"
+            data-translate="ContactHeader"
           >
             Kontakt
           </h2>
-          <p class="lead text-muted" data-translate="ServicesHeader2">
+          <p class="lead text-muted" data-translate="ContactDescription">
             Masz pytania? Skontaktuj się z nami – jesteśmy dostępni 24/7.
           </p>
         </div>
@@ -1082,7 +1082,7 @@
           <p>
             <i class="fas fa-envelope me-2"></i
             ><strong data-translate="Email">E-mail:</strong>
-            <a class="text-primary" href="mailto:kontakt.krukmed24@gmail.com"
+            <a href="mailto:kontak.krukmed24@gmail.com"
               >kontakt.krukmed24@gmail.com</a
             >
           </p>
@@ -1099,7 +1099,7 @@
 
         <!-- CTA dla mobile -->
         <a
-          href="tel:+48123456789"
+          href="tel:+48696456570"
           class="btn btn-primary d-inline-block d-md-none"
           data-translate="CallNow"
           >Zadzwoń teraz</a

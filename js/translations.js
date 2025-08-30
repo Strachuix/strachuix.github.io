@@ -179,6 +179,34 @@ const translations = {
     WhyChooseUsDoctor3Title: "Indywidualne podejście",
     WhyChooseUsDoctor3Description:
       "Dbamy o każdego pacjenta, zapewniając profesjonalną i empatyczną opiekę.",
+
+    // Tłumaczenia dla sekcji "Kariera"
+
+    CareerHeader: "Dołącz do naszego zespołu",
+    CareerDescription:
+      "Chcesz rozwijać swoją karierę w przyjaznym i nowoczesnym środowisku? W KrukMed24 cenimy profesjonalizm, współpracę i pasję do medycyny. Czekamy na specjalistów, którzy chcą razem z nami dbać o zdrowie pacjentów.",
+    CurrentOffersHeader: "Aktualne oferty pracy",
+    CurrentOffersDescription: "Dostępne stanowiska w KrukMed24.",
+    DoctorDescription:
+      "Szukamy lekarzy z doświadczeniem, którzy chcą wspierać pacjentów online.",
+    DoctorRequirement1: "Wymagane prawo wykonywania zawodu",
+    DoctorRequirement2:
+      "Mile widziana specjalizacja lub w trakcie specjalizacji",
+    ApplyNow: "Aplikuj",
+    PatientServiceSpecialist: "Specjalista ds. obsługi pacjenta",
+    PatientServiceDescription:
+      "Poszukujemy osób do kontaktu z pacjentami i wsparcia administracyjnego.",
+    PatientServiceRequirement1: "Wysoka kultura osobista",
+    PatientServiceRequirement2: "Doświadczenie w obsłudze klienta",
+    ApplicationFormHeader: "Formularz Aplikacyjny",
+    ApplicationFormDescription: "Aplikuj na stanowiska w KrukMed24.",
+    NameLabel: "Imię i nazwisko",
+    EmailLabel: "Adres e-mail",
+    CVLabel: "Dołącz CV",
+    MessageLabel: "Wiadomość",
+    RodoConsent:
+      "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu rekrutacji.",
+    SubmitApplication: "Wyślij aplikację",
   },
   en: {
     MainPage: "Home",
@@ -342,6 +370,33 @@ const translations = {
     WhyChooseUsDoctor3Title: "Personalized Approach",
     WhyChooseUsDoctor3Description:
       "We care for every patient, ensuring professional and empathetic care.",
+    // Translations for the "Career" section
+
+    CareerHeader: "Join Our Team",
+    CareerDescription:
+      "Do you want to develop your career in a friendly and modern environment? At KrukMed24, we value professionalism, collaboration, and a passion for medicine. We are looking for specialists who want to help us care for patients' health.",
+    CurrentOffersHeader: "Current Job Offers",
+    CurrentOffersDescription: "Available positions at KrukMed24.",
+    DoctorDescription:
+      "We are looking for experienced doctors who want to support patients online.",
+    DoctorRequirement1: "Valid medical license required",
+    DoctorRequirement2:
+      "Specialization or being in the process of specialization is welcome",
+    ApplyNow: "Apply Now",
+    PatientServiceSpecialist: "Patient Service Specialist",
+    PatientServiceDescription:
+      "We are looking for individuals to contact patients and provide administrative support.",
+    PatientServiceRequirement1: "High personal culture",
+    PatientServiceRequirement2: "Experience in customer service",
+    ApplicationFormHeader: "Application Form",
+    ApplicationFormDescription: "Apply for positions at KrukMed24.",
+    NameLabel: "Full Name",
+    EmailLabel: "Email Address",
+    CVLabel: "Attach CV",
+    MessageLabel: "Message",
+    RodoConsent:
+      "I consent to the processing of my personal data for recruitment purposes.",
+    SubmitApplication: "Submit Application",
   },
   uk: {
     MainPage: "Головна",
@@ -506,6 +561,33 @@ const translations = {
     WhyChooseUsDoctor3Title: "Індивідуальний підхід",
     WhyChooseUsDoctor3Description:
       "Ми дбаємо про кожного пацієнта, забезпечуючи професійну та емпатичну допомогу.",
+
+    // Тлумачення для секції "Кар'єра"
+
+    CareerHeader: "Приєднуйтесь до нашої команди",
+    CareerDescription:
+      "Хочете розвивати свою кар'єру в дружньому та сучасному середовищі? У KrukMed24 ми цінуємо професіоналізм, співпрацю та пристрасть до медицини. Ми шукаємо спеціалістів, які хочуть разом із нами дбати про здоров'я пацієнтів.",
+    CurrentOffersHeader: "Актуальні вакансії",
+    CurrentOffersDescription: "Доступні посади в KrukMed24.",
+    DoctorDescription:
+      "Ми шукаємо лікарів із досвідом, які хочуть підтримувати пацієнтів онлайн.",
+    DoctorRequirement1: "Необхідна дійсна ліцензія на медичну практику",
+    DoctorRequirement2: "Бажана спеціалізація або навчання на спеціалізації",
+    ApplyNow: "Подати заявку",
+    PatientServiceSpecialist: "Спеціаліст з обслуговування пацієнтів",
+    PatientServiceDescription:
+      "Шукаємо людей для контакту з пацієнтами та адміністративної підтримки.",
+    PatientServiceRequirement1: "Висока культура спілкування",
+    PatientServiceRequirement2: "Досвід роботи з клієнтами",
+    ApplicationFormHeader: "Форма заявки",
+    ApplicationFormDescription: "Подайте заявку на посади в KrukMed24.",
+    NameLabel: "Ім'я та прізвище",
+    EmailLabel: "Електронна пошта",
+    CVLabel: "Додати резюме",
+    MessageLabel: "Повідомлення",
+    RodoConsent:
+      "Я даю згоду на обробку моїх персональних даних для цілей рекрутації.",
+    SubmitApplication: "Надіслати заявку",
   },
 };
 
