@@ -46,6 +46,48 @@ function generateTiles(lang) {
 // Wywołaj generowanie kafelków po załadowaniu strony
 $(document).ready(function () {
   changeLanguage(currentLanguage); // Domyślny język
+
+  $("#applicationForm").on("submit", function (e) {
+    e.preventDefault(); // Zatrzymaj domyślne wysyłanie formularza
+
+    // Pobierz dane formularza
+    const formData = new FormData(this);
+
+    // Wyślij dane AJAX-em
+    $.ajax({
+      url: "php/mailer.php", // Ścieżka do backendu
+      type: "POST",
+      data: formData,
+      processData: false,
+      contentType: false,
+      success: function (response) {
+        // Obsługa odpowiedzi z backendu
+        const res = JSON.parse(response);
+        if (res.status === "success") {
+          showNotification("success", res.message);
+        } else {
+          showNotification("error", res.message);
+        }
+      },
+      error: function () {
+        showNotification("error", "Wystąpił błąd podczas wysyłania formularza.");
+      },
+    });
+  });
+
+  // Funkcja do wyświetlania powiadomień
+  function showNotification(type, message) {
+    const notification = $("#notification");
+    notification
+      .removeClass("hidden")
+      .addClass(type === "success" ? "alert-success" : "alert-danger")
+      .text(message);
+
+    // Ukryj powiadomienie po 5 sekundach
+    setTimeout(() => {
+      notification.addClass("hidden").removeClass("alert-success alert-danger");
+    }, 5000);
+  }
 });
 
 let notificationTimeout; // Globalna zmienna do przechowywania identyfikatora timeout
