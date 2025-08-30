@@ -1165,12 +1165,21 @@
             processData: false,
             contentType: false,
             success: function (response) {
-              // Obsługa odpowiedzi z backendu
-              const res = JSON.parse(response);
-              if (res.status === "success") {
-                showFormNotification("success", res.message);
-              } else {
-                showFormNotification("error", res.message);
+              response = JSON.stringify(response);
+              console.log("Odpowiedź z serwera:", response); // Loguj odpowiedź
+              try {
+                const res = JSON.parse(response); // Spróbuj sparsować odpowiedź
+                if (res.status === "success") {
+                  showFormNotification("success", res.message);
+                } else {
+                  showFormNotification("error", res.message);
+                }
+              } catch (error) {
+                console.error("Błąd parsowania JSON:", error);
+                showFormNotification(
+                  "error",
+                  "Nieprawidłowa odpowiedź z serwera."
+                );
               }
             },
             error: function () {
@@ -1184,18 +1193,17 @@
 
         // Funkcja do wyświetlania powiadomień
         function showFormNotification(type, message) {
-          const notification = $("#notification");
-          notification
-            .removeClass("hidden")
-            .addClass(type === "success" ? "alert-success" : "alert-danger")
-            .text(message);
-
-          // Ukryj powiadomienie po 5 sekundach
-          setTimeout(() => {
-            notification
-              .addClass("hidden")
-              .removeClass("alert-success alert-danger");
-          }, 5000);
+          // const notification = $("#notification");
+          // notification
+          //   .removeClass("hidden")
+          //   .addClass(type === "success" ? "alert-success" : "alert-danger")
+          //   .text(message);
+          // // Ukryj powiadomienie po 5 sekundach
+          // setTimeout(() => {
+          //   notification
+          //     .addClass("hidden")
+          //     .removeClass("alert-success alert-danger");
+          // }, 5000);
         }
       });
     </script>

@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $rodo = isset($_POST["rodo"]) ? "Tak" : "Nie";
 
     // Walidacja danych
-    if (!$name || !$email || !$message) {
+    if (!$name || !$email || !$message || !$rodo) {
         echo json_encode(["status" => "error", "message" => "Wszystkie pola są wymagane."]);
         exit;
     }
