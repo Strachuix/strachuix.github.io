@@ -26,9 +26,10 @@ const translations = {
     Career: "Kariera",
     Contact: "Kontakt",
     BookVisit: "Umów wizytę",
-    HeroTitle: "Twój Zaufany Partner w Medycynie",
-    HeroText:
-      "Krukmed24 to zespół lekarzy i specjalistów, którzy łączą wiedzę, doświadczenie i nowoczesne rozwiązania. Naszą misją jest zapewnienie Ci kompleksowej, bezpiecznej i skutecznej opieki medycznej — niezależnie od miejsca i czasu.",
+    Offer: "Oferta",
+    HeroTitle: "Potrzebujesz e-zwolnienia, recepty lub porady?",
+    HeroText: "Wszystkie potrzebne zaświadczenia nawet w",
+    HeroTextStrong: "15 minut.",
     ExploreOffer: "Poznaj Ofertę",
     ContactUs: "Skontaktuj się",
     IntroText:
@@ -147,8 +148,37 @@ const translations = {
     FAQHeader: "FAQ (Najczęściej zadawane pytania)",
     FAQDescription:
       "Znajdź odpowiedzi na najczęściej pojawiające się pytania dotyczące naszych usług.",
-      TelemedCareHeader: "Stała opieka telemedyczna",
+    TelemedCareHeader: "Stała opieka telemedyczna",
     TelemedCareDescription: "Twój lekarz na stałe - bez wychodzenia z domu.",
+    FooterCopyright: "&copy; 2025 KrukMed24. Wszelkie prawa zastrzeżone.",
+
+    // Tłumaczenia dla sekcji "Lekarze"
+    DoctorsHeroTitle: "Zespół, któremu możesz zaufać",
+    DoctorsHeroDescription:
+      "Nasi lekarze to eksperci z wieloletnim doświadczeniem klinicznym. Dzięki pasji do medycyny, zaangażowaniu i życzliwemu podejściu do pacjenta zapewniamy najwyższy standard opieki medycznej w przyjaznej atmosferze.",
+    DoctorsHeader: "Nasi Lekarze",
+    DoctorsHeaderDescription:
+      "Poznaj nasz zespół doświadczonych specjalistów, którzy łączą profesjonalizm z indywidualnym podejściem do pacjenta.",
+    Doctor1Specialization: "",
+    Doctor1Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis delectus nulla error fugiat quisquam, quaerat ullam a nobis tenetur?",
+    Doctor2Specialization: "Ortopeda",
+    Doctor2Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis delectus nulla error fugiat quisquam, quaerat ullam a nobis tenetur.",
+    DoctorsCTA: "Nie wiesz, który lekarz będzie najlepszy dla Ciebie?",
+    DoctorsCTAButton: "Skontaktuj się z nami",
+    WhyChooseUsHeader: "Dlaczego warto wybrać nasz zespół?",
+    WhyChooseUsDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iusto excepturi facilis dolorum. Optio asperiores expedita explicabo atque saepe mollitia.",
+    WhyChooseUsDoctor1Title: "Doświadczeni lekarze",
+    WhyChooseUsDoctor1Description:
+      "Nasi specjaliści posiadają wieloletnie doświadczenie w wielu dziedzinach medycyny.",
+    WhyChooseUsDoctor2Title: "Szybka pomoc online",
+    WhyChooseUsDoctor2Description:
+      "Teleporady, e-recepty i zwolnienia L4 bez zbędnego czekania i kolejek.",
+    WhyChooseUsDoctor3Title: "Indywidualne podejście",
+    WhyChooseUsDoctor3Description:
+      "Dbamy o każdego pacjenta, zapewniając profesjonalną i empatyczną opiekę.",
   },
   en: {
     MainPage: "Home",
@@ -161,9 +191,10 @@ const translations = {
     Career: "Career",
     Contact: "Contact",
     BookVisit: "Book an Appointment",
-    HeroTitle: "Your Trusted Partner in Medicine",
-    HeroText:
-      "Krukmed24 is a team of doctors and specialists who combine knowledge, experience, and modern solutions. Our mission is to provide you with comprehensive, safe, and effective medical care — anytime, anywhere.",
+    Offer: "Offer",
+    HeroTitle: "Need an e-sick leave, prescription, or consultation?",
+    HeroText: "All necessary certificates within",
+    HeroTextStrong: "15 minutes.",
     ExploreOffer: "Explore Offer",
     ContactUs: "Contact Us",
     IntroText:
@@ -282,6 +313,35 @@ const translations = {
       "Find answers to the most frequently asked questions about our services.",
     TelemedCareHeader: "Constant Telemed Care",
     TelemedCareDescription: "Your doctor at home - without leaving your house.",
+    FooterCopyright: "&copy; 2025 KrukMed24. All rights reserved.",
+
+    // Translations for the "Doctors" section
+    DoctorsHeroTitle: "A Team You Can Trust",
+    DoctorsHeroDescription:
+      "Our doctors are experts with years of clinical experience. With a passion for medicine, dedication, and a compassionate approach to patients, we provide the highest standard of medical care in a friendly atmosphere.",
+    DoctorsHeader: "Our Doctors",
+    DoctorsHeaderDescription:
+      "Meet our team of experienced specialists who combine professionalism with a personalized approach to patients.",
+    Doctor1Specialization: "",
+    Doctor1Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis delectus nulla error fugiat quisquam, quaerat ullam a nobis tenetur?",
+    Doctor2Specialization: "Orthopedist",
+    Doctor2Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis delectus nulla error fugiat quisquam, quaerat ullam a nobis tenetur.",
+    DoctorsCTA: "Not sure which doctor is best for you?",
+    DoctorsCTAButton: "Contact Us",
+    WhyChooseUsHeader: "Why Choose Our Team?",
+    WhyChooseUsDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iusto excepturi facilis dolorum. Optio asperiores expedita explicabo atque saepe mollitia.",
+    WhyChooseUsDoctor1Title: "Experienced Doctors",
+    WhyChooseUsDoctor1Description:
+      "Our specialists have years of experience in various fields of medicine.",
+    WhyChooseUsDoctor2Title: "Fast Online Assistance",
+    WhyChooseUsDoctor2Description:
+      "Teleconsultations, e-prescriptions, and sick leaves without unnecessary waiting or queues.",
+    WhyChooseUsDoctor3Title: "Personalized Approach",
+    WhyChooseUsDoctor3Description:
+      "We care for every patient, ensuring professional and empathetic care.",
   },
   uk: {
     MainPage: "Головна",
@@ -294,13 +354,16 @@ const translations = {
     Career: "Кар'єра",
     Contact: "Контакт",
     BookVisit: "Записатися на прийом",
-    HeroTitle: "Ваш Надійний Партнер у Медицини",
-    HeroText:
-      "Krukmed24 — це команда лікарів та спеціалістів, які поєднують знання, досвід та сучасні рішення. Наша місія — забезпечити вам комплексну, безпечну та ефективну медичну допомогу — у будь-який час та в будь-якому місці.",
+    HeroTitle: "Потрібно е-лікарняне, рецепт або консультація?",
+    HeroText: "Всі необхідні довідки навіть за",
+    HeroTextStrong: "15 хвилин.",
     ExploreOffer: "Дізнатися більше",
     ContactUs: "Зв'язатися з нами",
+    Offer: "Пропозиція",
     IntroText:
       "У <strong>Krukmed24</strong> ми віримо, що медична допомога повинна бути простою, швидкою та доступною завжди, коли вона потрібна. Тому ми створили місце, де без виходу з дому ви можете проконсультуватися з лікарем, отримати <strong>направлення</strong> або <strong>лікарняний</strong> — за кілька хвилин, без стресу та черг.",
+    IntroShortText:
+      "Krukmed24 — це більше, ніж просто платформа, це новий стандарт догляду за вашим здоров'ям. Адже здоров'я не може чекати.",
     WhyUsStrong: "Чому нам варто довіряти?",
     ModernMedicine: "Сучасна медицина",
     ModernMedicineDesc:
@@ -373,7 +436,7 @@ const translations = {
     CallNow: "Дзвоніть зараз",
     FooterDescription: "Ваш Надійний Партнер у Медицини.",
     FooterCredits:
-      "&copy; 2025. Проект та реалізація: Ян Єдрусяк, Станіслав Покропек.",
+      "&copy; 2025. Проект та реалізація: Jan Jędrusiak, Stanisław Pokropek.",
     PrivacyPolicyLink: "Політика конфіденційності",
     TermsLink: "Умови та положення",
     DoctorDisclaimer:
@@ -407,12 +470,42 @@ const translations = {
     PediatricConsultationDescription:
       "Допомога для вашої дитини — без стресу та черг.",
     PricePrefix: "Ціна:",
-    ServicesHeader2: "Дізнайтеся, що кажуть люди, які скористалися нашими послугами",
+    ServicesHeader2:
+      "Дізнайтеся, що кажуть люди, які скористалися нашими послугами",
     FAQHeader: "Питання та відповіді (FAQ)",
     FAQDescription:
       "Знайдіть відповіді на найчастіше задавані питання про наші послуги.",
     TelemedCareHeader: "Постійна телемедична допомога",
     TelemedCareDescription: "Ваш лікар вдома - без виходу з дому.",
+    FooterCopyright: "&copy; 2025 KrukMed24. Всі права захищені.",
+
+    // Тлумачення для секції "Лікарі"
+    DoctorsHeroTitle: "Команда, якій ви можете довіряти",
+    DoctorsHeroDescription:
+      "Наші лікарі — це експерти з багаторічним клінічним досвідом. Завдяки пристрасті до медицини, відданості та доброзичливому підходу до пацієнтів ми забезпечуємо найвищий стандарт медичної допомоги в дружній атмосфері.",
+    DoctorsHeader: "Наші Лікарі",
+    DoctorsHeaderDescription:
+      "Познайомтеся з нашою командою досвідчених спеціалістів, які поєднують професіоналізм з індивідуальним підходом до пацієнтів.",
+    Doctor1Specialization: "",
+    Doctor1Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis delectus nulla error fugiat quisquam, quaerat ullam a nobis tenetur?",
+    Doctor2Specialization: "Ортопед",
+    Doctor2Description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis delectus nulla error fugiat quisquam, quaerat ullam a nobis tenetur.",
+    DoctorsCTA: "Не знаєте, який лікар буде найкращим для вас?",
+    DoctorsCTAButton: "Зв'яжіться з нами",
+    WhyChooseUsHeader: "Чому варто обрати нашу команду?",
+    WhyChooseUsDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iusto excepturi facilis dolorum. Optio asperiores expedita explicabo atque saepe mollitia.",
+    WhyChooseUsDoctor1Title: "Досвідчені лікарі",
+    WhyChooseUsDoctor1Description:
+      "Наші спеціалісти мають багаторічний досвід у багатьох галузях медицини.",
+    WhyChooseUsDoctor2Title: "Швидка допомога онлайн",
+    WhyChooseUsDoctor2Description:
+      "Телепоради, е-рецепти та лікарняні без зайвого очікування та черг.",
+    WhyChooseUsDoctor3Title: "Індивідуальний підхід",
+    WhyChooseUsDoctor3Description:
+      "Ми дбаємо про кожного пацієнта, забезпечуючи професійну та емпатичну допомогу.",
   },
 };
 

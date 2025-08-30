@@ -3,16 +3,13 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
-<Files .htaccess>
-    Order allow,deny
-    Deny from all
-</Files>
-
+# Zablokuj dostęp do pliku mailer.php (jeśli wymagane)
 # <FilesMatch "(mailer\.php)">
 #     Order allow,deny
 #     Deny from all
 # </FilesMatch>
 
+# Zezwól na dostęp do plików .js tylko z określonego referera
 # <FilesMatch "\.(js)$">
 #     SetEnvIf Referer "^https?://(www\.)?krukmed24\.pl" allow_js
 #     Order allow,deny
@@ -20,10 +17,12 @@ RewriteBase /
 #     Deny from all
 # </FilesMatch>
 
+# Obsługa istniejących plików lub katalogów
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
+# Przekierowania dla stron
 RewriteRule ^(o-nas|uslugi|opinie|faq|kontakt)/?$ index.html [L]
 RewriteRule ^rezerwacje/?$ bookvisit.html [L]
 RewriteRule ^polityka-prywatnosci/?$ polityka-prywatnosci.html [L]
@@ -31,4 +30,10 @@ RewriteRule ^regulamin/?$ regulamin.html [L]
 RewriteRule ^cennik/?$ pricing.html [L]
 RewriteRule ^lekarze/?$ doctors.html [L]
 RewriteRule ^kariera/?$ carrer.html [L]
+
+# Zezwól na dostęp do plików .php
+<FilesMatch "\.php$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
 

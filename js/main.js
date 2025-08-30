@@ -59,19 +59,21 @@ function changeLanguage(lang) {
   }
   currentLanguage = lang; // Ustaw nowy język
 
-  // Zatrzymaj wywoływanie funkcji showNotification
-  if (notificationTimeout) {
-    clearTimeout(notificationTimeout);
+  if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
+    // Zatrzymaj wywoływanie funkcji showNotification
+    if (notificationTimeout) {
+      clearTimeout(notificationTimeout);
+    }
+
+    // Przeładuj kafelki z nowym językiem
+    generateTiles(lang);
+
+    // Uruchom powiadomienia w wybranym języku
+    showNotification(lang);
+
+    // Generuj opinie w wybranym języku
+    generateTestimonials(lang);
   }
-
-  // Przeładuj kafelki z nowym językiem
-  generateTiles(lang);
-
-  // Uruchom powiadomienia w wybranym języku
-  showNotification(lang);
-
-  // Generuj opinie w wybranym języku
-  generateTestimonials(lang);
 
     // Przeładuj tłumaczenia
   translate(lang);

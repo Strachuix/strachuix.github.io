@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KrukMed24.pl | Strona Główna</title>
-    <link rel="icon" href="/images/logop.webp" type="image/jpeg" />
+    <link rel="icon" href="./images/logop.webp" type="image/jpeg" />
 
     <meta name="author" content="Jan Jędrusiak, Stanisław Pokropek" />
     <meta
@@ -869,90 +869,10 @@
 
   <body>
     <!-- Nawigacja -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a href="/" class="navbar-brand">
-          <img src="/images/logo.webp" alt="Logo KrukMed24" loading="lazy" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav align-items-lg-center">
-            <li class="nav-item">
-              <a href="/" class="nav-link active" data-translate="MainPage"
-                >Strona Główna</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/o-nas" class="nav-link" data-translate="AboutUs"
-                >O nas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/uslugi" class="nav-link" data-translate="Services"
-                >Usługi</a
-              >
-            </li>
-            <!-- <li class="nav-item">
-              <a href="/cennik" class="nav-link" data-translate="PriceList"
-                >Cennik</a
-              >
-            </li> -->
-            <li class="nav-item">
-              <a href="/lekarze" class="nav-link" data-translate="Doctors"
-                >Lekarze</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/opinie" class="nav-link" data-translate="Opinions"
-                >Opinie</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/faq" class="nav-link" data-translate="FAQ">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/kariera" class="nav-link" data-translate="Career"
-                >Kariera</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/kontakt" class="nav-link" data-translate="Contact"
-                >Kontakt</a
-              >
-            </li>
-          </ul>
-          <a
-            href="/rezerwacje"
-            class="btn btn-login ms-lg-3"
-            data-translate="BookVisit"
-          >
-            Umów wizytę
-          </a>
-          <div class="language-switcher d-flex gap-2 ms-3">
-          <button class="btn btn-outline-light" onclick="changeLanguage('pl')" aria-label="Polski">
-            PL
-          </button>
-          <button class="btn btn-outline-light" onclick="changeLanguage('en')" aria-label="English">
-            EN
-          </button>
-          <button class="btn btn-outline-light" onclick="changeLanguage('uk')" aria-label="Українська">
-            UA
-          </button>
-        </div>
-        </div>
-      </div>
-    </nav>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+    ></nav>
 
     <!-- Nagłówek -->
 
@@ -964,13 +884,11 @@
               class="display-4 fw-bold mb-3 text-primary"
               data-translate="HeroTitle"
             >
-              Twój Zaufany Partner w Medycynie
+              Potrzebujesz e-zwolnienia, recepty lub porady?
             </h1>
             <p class="lead mb-4 text-muted" data-translate="HeroText">
-              Krukmed24 to zespół lekarzy i specjalistów, którzy łączą wiedzę,
-              doświadczenie i nowoczesne rozwiązania. Naszą misją jest
-              zapewnienie Ci kompleksowej, bezpiecznej i skutecznej opieki
-              medycznej — niezależnie od miejsca i czasu.
+              Wszystkie potrzebne zaświadczenia nawet w
+              <strong data-translate="HeroTextStrong">15 minut.</strong>
             </p>
             <div
               class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start"
@@ -990,7 +908,12 @@
             </div>
           </div>
           <div class="col-lg-5 mt-4 mt-lg-0 d-none d-lg-block">
-            <!-- <img src="/images/doc.webp" class="img-fluid hero-image" alt="Nowoczesny sprzęt medyczny" loading="lazy" /> -->
+            <img
+              src="./images/docw.webp"
+              class="img-fluid hero-image"
+              alt="Nowoczesny sprzęt medyczny"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -1000,7 +923,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <!-- <img src="/images/doc-team.webp" alt="Zespół KrukMed24 - Nasi Eksperci" class="img-fluid rounded-3 shadow-lg" /> -->
+            <img
+              src="./images/docs1.webp"
+              alt="Zespół KrukMed24 - Nasi Eksperci"
+              class="img-fluid"
+            />
           </div>
           <div class="col-lg-6">
             <h2
@@ -1183,7 +1110,7 @@
             Stała opieka telemedyczna
           </h2>
           <p class="lead text-muted" data-translate="TelemedCareDescription">
-            Twój lekarz na stałe - bez wychodzenia z domu.
+            Twój lekarz na stałe - bez wychodzenia z domu. *Dostępne wkrótce!*
           </p>
         </div>
 
@@ -1279,7 +1206,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 mb-4 mb-md-0 order-md-2">
             <img
-              src="/images/doc1.webp"
+              src="./images/docw1.webp"
               alt="Konsultacja online krok po kroku"
               class="img-fluid"
               loading="lazy"
@@ -1608,12 +1535,14 @@
           <p>
             <i class="fas fa-phone-alt me-2"></i
             ><strong data-translate="Phone">Telefon:</strong>
-            <a href="tel:+48123456789">+48 123 456 789</a>
+            <a href="tel:+48696456570">+48 696 456 570</a>
           </p>
           <p>
             <i class="fas fa-envelope me-2"></i
             ><strong data-translate="Email">E-mail:</strong>
-            <a href="mailto:kontakt@123.pl">kontakt@123.pl</a>
+            <a href="mailto:kontak.krukmed24@gmail.com"
+              >kontakt.krukmed24@gmail.com</a
+            >
           </p>
         </div>
 
@@ -1628,7 +1557,7 @@
 
         <!-- CTA dla mobile -->
         <a
-          href="tel:+48123456789"
+          href="tel:+48696456570"
           class="btn btn-primary d-inline-block d-md-none"
           data-translate="CallNow"
           >Zadzwoń teraz</a
@@ -1638,85 +1567,7 @@
 
     <!-- Stopka -->
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3 class="footer-logo" data-translate="KrukMed24">KrukMed24</h3>
-          <p class="footer-description" data-translate="FooterDescription">
-            Twój Zaufany Partner w Medycynie.
-          </p>
-        </div>
-
-        <div class="footer-column">
-          <h4>Oferta</h4>
-          <ul class="footer-links">
-            <li>
-              <a href="#EPrescription" data-translate="EPrescription"
-                >E-recepta</a
-              >
-            </li>
-            <li>
-              <a href="#SickLeave" data-translate="SickLeave">Zwolnienie L4</a>
-            </li>
-            <li>
-              <a href="ECertificate" data-translate="ECertificate"
-                >E-zaświadzenie</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4 data-translate="Contact">Kontakt</h4>
-          <p><span data-translate="Email">Email:</span> kontakt@123.pl</p>
-          <p><span data-translate="Phone">Telefon:</span> +48 123 456 789</p>
-          <!-- <div class="socials">
-          <a href="/"><i class="fab fa-facebook-f"></i></a>
-          <a href="/"><i class="fab fa-instagram"></i></a>
-          <a href="/"><i class="fab fa-linkedin-in"></i></a>
-        </div> -->
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="text-muted" style="font-size: 10px">
-          &copy; 2025 KrukMed24. Wszelkie prawa zastrzeżone.
-        </p>
-        <p
-          class="text-muted"
-          style="font-size: 10px"
-          data-translate="FooterCredits"
-        >
-          &copy; 2025. Projekt i realizacja:
-          <a
-            class="link-underline link-underline-opacity-0"
-            href="https://janjedrusiak.pl/"
-            >Jan Jędrusiak</a
-          >, Stanisław Pokropek.
-        </p>
-        <p class="text-muted" style="font-size: 10px">
-          <a href="/polityka-prywatnosci" data-translate="PrivacyPolicyLink"
-            >Polityka prywatności</a
-          >
-          |
-          <a href="/regulamin" data-translate="TermsLink">Regulamin</a>
-        </p>
-        <p
-          class="text-muted"
-          style="font-size: 10px"
-          data-translate="DoctorDisclaimer"
-        >
-          Uwaga: Lekarz udzielający świadczenia w ramach telemedycyny ma prawo
-          odmówić realizacji usługi (np. wystawienia recepty, zwolnienia
-          lekarskiego, skierowania itp.), jeśli na podstawie przeprowadzonego
-          wywiadu i oceny stanu zdrowia pacjenta uzna, że brak jest medycznych
-          wskazań do jej wykonania. Decyzja lekarza podejmowana jest każdorazowo
-          zgodnie z aktualną wiedzą medyczną i jego niezależną oceną kliniczna.
-          Zakup usługi nie gwarantuje jej realizacji w formie oczekiwanej przez
-          pacjenta. Ostateczna decyzja należy do lekarza i zależy od medycznych
-          wskazań.
-        </p>
-      </div>
-    </footer>
+    <footer id="footer" class="footer"></footer>
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -1725,18 +1576,39 @@
     <script src="./js/servicesArray.js"></script>
     <script src="./js/testimonialsArray.js"></script>
     <script src="./js/translations.js"></script>
+    <script>
+      // Wczytaj zawartość pliku footer.html i navigation.html
+      fetch("./footer.html")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Błąd wczytywania stopki: " + response.statusText);
+          }
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Wystąpił błąd:", error);
+        });
 
-    <div id="notification" class="notification hidden">
-      <div class="notification-icon">
-        <i class="fas fa-calendar-check"></i>
-      </div>
-      <div class="notification-content">
-        <p>
-          <strong>Dominika D.</strong> otrzymała właśnie
-          <strong>E-zwolnienie</strong>
-        </p>
-        <span class="time">11 minut temu</span>
-      </div>
-    </div>
+      fetch("./navigation.html")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              "Błąd wczytywania nawigacji: " + response.statusText
+            );
+          }
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Wystąpił błąd:", error);
+        });
+    </script>
+
+    <div id="notification" class="notification hidden"></div>
   </body>
 </html>

@@ -153,7 +153,7 @@ input.form-control {
 }
 
 #carrer-bg {
-  background-image: url("../images/doc-team.jpg");
+  background-image: url("./images/doc-team.jpg");
 }
 
 .consultation-section a,
@@ -485,7 +485,7 @@ input.form-control {
   }
 
   .consultation-section {
-    background-image: url("../images/doc.jpg");
+    background-image: url("./images/doc.jpg");
     background-size: cover;
     background-position: center;
   }
