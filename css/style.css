@@ -552,12 +552,16 @@ input.form-control {
 
   .footer-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.5rem;
   }
 
   .footer-column {
     flex: 1 1 100%;
+  }
+
+  .footer-column p{
+    text-align: center;
   }
 
   .footer-column h4,
