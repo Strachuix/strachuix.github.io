@@ -1,4 +1,4 @@
-let currentLanguage = "pl"; // Domyślny język
+let currentLanguage = null; // Domyślny język
 
 // Funkcja do generowania kafelków z tłumaczeniami
 function generateTiles(lang) {
@@ -45,7 +45,7 @@ function generateTiles(lang) {
 
 // Wywołaj generowanie kafelków po załadowaniu strony
 $(document).ready(function () {
-  changeLanguage(currentLanguage); // Domyślny język
+  changeLanguage("pl"); // Domyślny język
 });
 
 let notificationTimeout; // Globalna zmienna do przechowywania identyfikatora timeout
