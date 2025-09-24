@@ -179,6 +179,7 @@ const translations = {
     WhyChooseUsDoctor3Title: "Indywidualne podejście",
     WhyChooseUsDoctor3Description:
       "Dbamy o każdego pacjenta, zapewniając profesjonalną i empatyczną opiekę.",
+    Choose: "Wybieram",
 
     // Tłumaczenia dla sekcji "Kariera"
 
@@ -370,6 +371,8 @@ const translations = {
     WhyChooseUsDoctor3Title: "Personalized Approach",
     WhyChooseUsDoctor3Description:
       "We care for every patient, ensuring professional and empathetic care.",
+    Choose: "Choose",
+
     // Translations for the "Career" section
 
     CareerHeader: "Join Our Team",
@@ -562,6 +565,7 @@ const translations = {
     WhyChooseUsDoctor3Description:
       "Ми дбаємо про кожного пацієнта, забезпечуючи професійну та емпатичну допомогу.",
 
+    Choose: "Обираю",
     // Тлумачення для секції "Кар'єра"
 
     CareerHeader: "Приєднуйтесь до нашої команди",

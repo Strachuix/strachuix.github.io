@@ -30,10 +30,10 @@ function generateTiles(lang) {
             <h5 class="mb-0">
               <span data-translate="PricePrefix">Cena:</span> ${
                 service.price
-              } zł
+              }
             </h5>
             <a href="/rezerwacje" class="btn btn-primary" data-translate="Wybieram">
-              ${translations[lang]["Wybieram"] || "Wybieram"}
+              ${translations[lang]["Choose"] || "Wybieram"}
             </a>
           </div>
         </div>
@@ -97,35 +97,6 @@ function getRandomNotification(lang = "pl") {
     time: `${randomTime} minut temu`,
   };
 }
-
-const messages = [
-  {
-    name: "Dominika D.",
-    action: "otrzymała właśnie E-zwolnienie",
-    time: "8 minut temu",
-  },
-  {
-    name: "Marcin P.",
-    action: "otrzymał właśnie E-recepte",
-    time: "minute temu",
-  },
-  {
-    name: "Marek B.",
-    action: "otrzymał właśnie E-skierowanie",
-    time: "11 minut temu",
-  },
-  {
-    name: "Dagmara C.",
-    action: "zarezerwowała właśnie konsultacje internistyczną",
-    time: "2 minuty temu",
-  },
-  {
-    name: "Michał Z.",
-    action: "zarezerwował konsultację online",
-    time: "5 minut temu",
-  },
-  { name: "Anna K.", action: "otrzymała receptę", time: "2 minuty temu" },
-];
 
 function showNotification(lang = "pl") {
   const notification = document.getElementById("notification");
