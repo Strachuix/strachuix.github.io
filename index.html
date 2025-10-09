@@ -2196,21 +2196,20 @@
     <script src="./js/translations.js"></script>
 
     <script>
+      let currentLanguage = localStorage.getItem("language") || "pl";
       // Wczytaj zawartość pliku footer.html i navigation.html
-
       fetch("./footer.html")
         .then((response) => {
           if (!response.ok) {
             throw new Error("Błąd wczytywania stopki: " + response.statusText);
           }
-
           return response.text();
         })
-
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
+          // Przetłumacz stopkę po załadowaniu
+          translate(currentLanguage);
         })
-
         .catch((error) => {
           console.error("Wystąpił błąd:", error);
         });
@@ -2222,14 +2221,13 @@
               "Błąd wczytywania nawigacji: " + response.statusText
             );
           }
-
           return response.text();
         })
-
         .then((data) => {
           document.getElementById("navbar").innerHTML = data;
+          // Przetłumacz nawigację po załadowaniu
+          translate(currentLanguage);
         })
-
         .catch((error) => {
           console.error("Wystąpił błąd:", error);
         });

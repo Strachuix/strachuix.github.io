@@ -1,5 +1,3 @@
-let currentLanguage = null; // Domyślny język
-
 // Funkcja do generowania kafelków z tłumaczeniami
 function generateTiles(lang) {
   const tileGrid = $("#services");
@@ -8,32 +6,23 @@ function generateTiles(lang) {
   services.forEach((service) => {
     const cardHtml = `
       <div class="col">
-        <div class="card shadow-sm p-4 h-100 d-flex flex-column" id="${
-          service.translate.title
-        }">
+        <div class="card shadow-sm p-4 h-100 d-flex flex-column">
           <div class="d-flex align-items-center mb-3">
             ${service.icon}
-            <h5 class="ms-3 mb-0" data-translate="${service.translate.title}">
-              ${translations[lang][service.translate.title] || service.title}
+            <h5 class="ms-3 mb-0">
+              ${service.titles[lang]}
             </h5>
           </div>
-          <p class="text-muted flex-grow-1" data-translate="${
-            service.translate.description
-          }">
-            ${
-              translations[lang][service.translate.description] ||
-              service.description
-            }
+          <p class="text-muted flex-grow-1">
+            ${service.descriptions[lang]}
           </p>
           <hr />
           <div class="d-flex justify-content-between align-items-center">
             <h5 class="mb-0">
-              <span data-translate="PricePrefix">Cena:</span> ${
-                service.price
-              }
+              <span>${translations[lang].PricePrefix || 'Cena:'}</span> ${service.price}
             </h5>
-            <a href="/rezerwacje" class="btn btn-primary" data-translate="Wybieram">
-              ${translations[lang]["Choose"] || "Wybieram"}
+            <a href="/rezerwacje" class="btn btn-primary">
+              ${translations[lang].Choose || "Wybieram"}
             </a>
           </div>
         </div>
@@ -45,7 +34,12 @@ function generateTiles(lang) {
 
 // Wywołaj generowanie kafelków po załadowaniu strony
 $(document).ready(function () {
-  changeLanguage("pl"); // Domyślny język
+  console.log(localStorage.getItem("language"));
+  if (localStorage.getItem("language")) {
+    changeLanguage(localStorage.getItem("language"));
+  }else{
+    changeLanguage("pl");
+  }
 });
 
 let notificationTimeout; // Globalna zmienna do przechowywania identyfikatora timeout
@@ -53,14 +47,18 @@ let countdownInterval; // Globalna zmienna do przechowywania identyfikatora inte
 
 // Obsługa zmiany języka
 function changeLanguage(lang) {
-  if (currentLanguage === lang) {
-    return; // Jeśli język jest już ustawiony, nie rób nic
-  }
-  currentLanguage = lang; // Ustaw nowy język
+  console.log("changeLanguage("+lang+")");
+  localStorage.setItem("language", lang);
+
+  const pathname = window.location.pathname;
+  const indexPages = ['/', '/o-nas', '/o-nas/', '/uslugi', '/uslugi/', '/opinie', '/opinie/', '/faq', '/faq/', '/kontakt', '/kontakt/'];
+
+  // Przeładuj tłumaczenia
+  translate(lang);
 
   if (
-    window.location.pathname === "/" ||
-    window.location.pathname.endsWith("index.html")
+    pathname.endsWith("index.html") ||
+    indexPages.includes(pathname)
   ) {
     // Zatrzymaj wywoływanie funkcji showNotification
     if (notificationTimeout) {
@@ -76,9 +74,6 @@ function changeLanguage(lang) {
     // Generuj opinie w wybranym języku
     generateTestimonials(lang);
   }
-
-  // Przeładuj tłumaczenia
-  translate(lang);
 }
 
 function getRandomNotification(lang = "pl") {
@@ -154,7 +149,7 @@ function showNotification(lang = "pl") {
 
 // Uruchom powiadomienia po załadowaniu strony
 document.addEventListener("DOMContentLoaded", () => {
-  const currentLang = "pl"; // Domyślny język (możesz zmienić na dynamiczny)
+  const currentLang = localStorage.getItem("language") || "pl";
   setTimeout(
     () => showNotification(currentLang),
     Math.floor(Math.random() * (30 - 10 + 1) + 10) * 1000
@@ -205,3 +200,4 @@ function generateTestimonials(lang) {
     testimonialsContainer.innerHTML += testimonialCard;
   });
 }
+
